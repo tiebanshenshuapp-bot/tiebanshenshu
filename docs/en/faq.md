@@ -1,3 +1,10 @@
+---
+title: "Tieban Shenshu FAQ"
+description: "Frequent questions about Tieban Shenshu: difference from Bazi, what kaoke dingfen means, how clause numbers work, and where the 12,000-clause figure comes from."
+lang: en
+layout: default
+---
+
 # FAQ
 
 ## About this project
