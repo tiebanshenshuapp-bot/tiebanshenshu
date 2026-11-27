@@ -16,6 +16,8 @@
   24 篇四语文档 · 6 个教学命令 · 26 项单元测试 · 5 项 CI 检查
 </p>
 
+🌐 **在线知识库（GitHub Pages）**：[立即阅读](https://tiebanshenshuapp-bot.github.io/tiebanshenshu/) —— 四语 25 页，无需克隆仓库。
+
 ---
 
 ## 六大入口
