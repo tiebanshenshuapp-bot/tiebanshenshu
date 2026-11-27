@@ -1,3 +1,10 @@
+---
+title: "Tieban Shenshu: An Overview"
+description: "Tieban Shenshu (Iron Plate Divine Numbers) is a traditional Chinese numerology system. How it differs from Bazi, its three core features, and which historical claims are verifiable."
+lang: en
+layout: default
+---
+
 # Tieban Shenshu — Overview
 
 > This is introductory material from our public research community.
