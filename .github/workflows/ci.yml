@@ -80,11 +80,28 @@ jobs:
       - name: 四语首行与互链
         run: |
           set -e
-          head -1 README.md       | grep -q "^# 铁板神数软件" || { echo "::error::README.md 首行不符"; exit 1; }
-          head -1 README.zh-HK.md | grep -q "^# 鐵板神數軟件" || { echo "::error::README.zh-HK.md 首行不符"; exit 1; }
-          head -1 README.zh-TW.md | grep -q "^# 鐵板神數軟體" || { echo "::error::README.zh-TW.md 首行不符"; exit 1; }
-          head -1 README.en.md    | grep -q "^# Tieban Shenshu" || { echo "::error::README.en.md 首行不符"; exit 1; }
-          echo "OK: 四语首行正确"
+          # README 顶部为品牌横幅，标题可用 Markdown H1 或 HTML <h1>，在前 30 行内检索
+          check_h1() {
+            f="$1"; title="$2"
+            if head -30 "$f" | grep -qE "(^# +${title}$|<h1[^>]*>${title}</h1>)"; then
+              echo "  OK $f -> $title"
+            else
+              echo "::error::$f 前 30 行内未找到标题: $title"
+              exit 1
+            fi
+          }
+          check_h1 README.md       "铁板神数软件"
+          check_h1 README.zh-HK.md "鐵板神數軟件"
+          check_h1 README.zh-TW.md "鐵板神數軟體"
+          check_h1 README.en.md    "Tieban Shenshu"
+          echo "OK: 四语标题正确"
+
+          # 品牌横幅必须存在且被引用
+          for f in README.md README.zh-HK.md README.zh-TW.md README.en.md; do
+            grep -q "assets/brand/banner.png" "$f" || { echo "::error::$f 缺少品牌横幅"; exit 1; }
+          done
+          [ -f assets/brand/banner.png ] || { echo "::error::banner.png 不存在"; exit 1; }
+          echo "OK: 品牌横幅链路完整"
           for f in README.md README.zh-HK.md README.zh-TW.md README.en.md; do
             for t in README.md README.zh-HK.md README.zh-TW.md README.en.md; do
               if [ "$f" != "$t" ]; then

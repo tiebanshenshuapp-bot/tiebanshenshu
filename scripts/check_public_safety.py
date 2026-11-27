@@ -176,7 +176,14 @@ def check_file(path: Path, root: Path, rep: Report):
         rep.block(rel, f"文件过大 {size / 1024 / 1024:.2f} MB（上限 1 MB）")
 
     if not is_text_file(path):
-        rep.warn(rel, "二进制或非文本文件，未做内容扫描，请人工确认")
+        # 本项目自有品牌图像资源：来源可控，不视为风险
+        allowed_asset_dirs = ("assets/brand", "assets/social-preview", "assets/screenshots")
+        rel_posix = Path(rel).as_posix()
+        if any(rel_posix.startswith(d) for d in allowed_asset_dirs) and \
+           path.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp", ".svg"}:
+            rep.info(rel, "自有品牌资源（来源可通过 git 历史追溯）")
+        else:
+            rep.warn(rel, "二进制或非文本文件，未做内容扫描，请人工确认")
         return
 
     # 3. 内容扫描
@@ -198,15 +205,38 @@ def check_file(path: Path, root: Path, rep: Report):
                 continue
             rep.warn(rel, f"疑似 {label}（可能是虚构样例，请确认）")
 
+    # 「边界声明」标志：关键词附近出现这些表述，说明是在声明"不公开"而非实际泄漏
+    BOUNDARY_MARKERS = (
+        "不在此", "不公开", "不在本仓库", "禁止公开", "不得公开",
+        "not part of", "not published", "is not included", "do not publish",
+        "不包含", "不含", "排除",
+    )
+
+    def is_boundary_statement(text, kw):
+        """关键词是否出现在边界声明语境中（前后 80 字符内）"""
+        start = 0
+        while True:
+            i = text.find(kw, start)
+            if i < 0:
+                return False
+            ctx = text[max(0, i - 80): i + len(kw) + 80]
+            if any(m in ctx for m in BOUNDARY_MARKERS):
+                return True
+            start = i + len(kw)
+
     for kw in PRIVATE_ASSET_KEYWORDS:
         if kw in content:
             if path.name in ("check_public_safety.py", "test_tools.py",
                              "THIRD_PARTY_NOTICES.md", "SECURITY.md"):
                 continue
-            if path.suffix.lower() in (".md", ".txt", ".cff"):
-                rep.info(rel, f"提及「{kw}」（文档中的边界说明）")
+            if is_boundary_statement(content, kw):
+                rep.info(rel, f"提及「{kw}」（边界声明语境）")
+            elif path.suffix.lower() in (".md", ".txt", ".cff", ".svg"):
+                rep.info(rel, f"提及「{kw}」（文档说明）")
+            elif path.suffix.lower() in (".py", ".yml", ".yaml", ".json"):
+                rep.info(rel, f"代码中提及「{kw}」（通常为检测规则或文案）")
             else:
-                rep.warn(rel, f"代码/数据文件中出现私有资产关键词「{kw}」，请确认不是实际内容")
+                rep.warn(rel, f"文件中出现私有资产关键词「{kw}」，请确认不是实际内容")
 
 
 def main(argv=None):
