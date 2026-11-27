@@ -1,3 +1,10 @@
+---
+title: "Tieban Shenshu: History and Disputes"
+description: "Documentary timeline for Tieban Shenshu: verifiable records, attributed legends, historical criticism, and unresolved scholarly disputes."
+lang: en
+layout: default
+---
+
 # History and Debates
 
 > **Where the evidence is contested, we say so. Where it is absent, we say "unknown".**
