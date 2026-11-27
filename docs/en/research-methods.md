@@ -1,3 +1,10 @@
+---
+title: "Tieban Shenshu Research Methods"
+description: "Our evidence-grading standard and citation conventions: how to weigh a claim and how to verify anything we publish."
+lang: en
+layout: default
+---
+
 # Research Methods
 
 > How we judge, how we cite, and how we handle disagreement.
