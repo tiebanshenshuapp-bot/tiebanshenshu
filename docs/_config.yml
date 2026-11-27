@@ -1,0 +1,40 @@
+# GitHub Pages（Jekyll）配置 · 铁板神数公开研究知识库
+title: 鐵板神數 · 公开研究知识库
+description: 铁板神数（Tieban Shenshu）公开研究资料：术语索引、历史源流、研究方法与可运行教学示例。官网 https://tiebanshenshuapp.com
+lang: zh-Hans
+theme: jekyll-theme-cayman
+
+# 让搜索引擎建立正确索引
+url: https://tiebanshenshuapp-bot.github.io
+baseurl: /tiebanshenshu
+
+# 官方站对照（canonical 提示，避免与官网争排名）
+official_site: https://tiebanshenshuapp.com
+trial_cta: https://tiebanshenshuapp.com/trial
+
+# GitHub Pages 原生支持的插件
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# 不发布的内容
+exclude:
+  - "*.py"
+  - "scripts/"
+  - "demo/tests/"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
