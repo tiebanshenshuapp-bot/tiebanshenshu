@@ -16,6 +16,8 @@
   24 篇四語文件 · 6 個教學指令 · 26 項單元測試 · 5 項 CI 檢查
 </p>
 
+🌐 **線上知識庫（GitHub Pages）**：[立即閱讀](https://tiebanshenshuapp-bot.github.io/tiebanshenshu/) —— 四語 25 頁，無需克隆倉庫。
+
 ---
 
 ## 六大入口
