@@ -39,3 +39,6 @@ HANDOFF*
 CURRENT*
 *.db
 *.sqlite3
+
+# 本地渲染验证产物（不公开）
+_preview/
