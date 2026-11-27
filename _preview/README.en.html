@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>README.en.md</title>
+<style>
+:root { --fg:#1f2328; --muted:#59636e; --border:#d1d9e0; --bg:#ffffff;
+        --code-bg:#f6f8fa; --link:#0969da; --accent:#bf3a2b; }
+* { box-sizing: border-box; }
+body { margin:0; padding:24px 16px; background:var(--bg); color:var(--fg);
+       font: 16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",
+             "Noto Sans TC","PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;
+       -webkit-font-smoothing: antialiased; }
+.markdown-body { max-width: 980px; margin: 0 auto; word-wrap: break-word; }
+h1,h2,h3,h4 { margin-top:24px; margin-bottom:16px; font-weight:600; line-height:1.25; }
+h1 { font-size:2em; padding-bottom:.3em; border-bottom:1px solid var(--border); }
+h2 { font-size:1.5em; padding-bottom:.3em; border-bottom:1px solid var(--border); }
+h3 { font-size:1.25em; }
+a { color:var(--link); text-decoration:none; }
+a:hover { text-decoration:underline; }
+code { background:var(--code-bg); padding:.2em .4em; border-radius:6px;
+       font-size:85%; font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace; }
+pre { background:var(--code-bg); padding:16px; overflow:auto; border-radius:6px; }
+pre code { background:none; padding:0; font-size:100%; }
+table { border-collapse:collapse; display:block; width:max-content; max-width:100%;
+        overflow:auto; margin:16px 0; }
+th,td { border:1px solid var(--border); padding:6px 13px; }
+th { background:var(--code-bg); font-weight:600; }
+tr:nth-child(2n) { background:#f6f8fa; }
+blockquote { margin:0 0 16px; padding:0 1em; color:var(--muted);
+             border-left:.25em solid var(--border); }
+hr { height:.25em; padding:0; margin:24px 0; background:var(--border); border:0; }
+img { max-width:100%; }
+ul,ol { padding-left:2em; }
+@media (max-width: 480px) {
+  body { padding: 16px 12px; font-size:15px; }
+  h1 { font-size:1.6em; } h2 { font-size:1.3em; }
+  table { font-size:14px; }
+}
+</style>
+</head>
+<body>
+<article class="markdown-body">
+<h1 id="tieban-shenshu">Tieban Shenshu</h1>
+<p><strong>Tieban Shenshu Community Edition</strong></p>
+<p><a href="README.md">简体中文</a> ｜ <a href="README.zh-HK.md">繁體中文（香港／澳門）</a> ｜ <a href="README.zh-TW.md">正體中文（台灣）</a> ｜ <strong>English</strong></p>
+<blockquote>
+<p>Community research and educational demos for a classical Chinese divination text.</p>
+</blockquote>
+<hr />
+<h2 id="what-this-is">What this is</h2>
+<p>This repository is the <strong>public research community and educational demo project</strong> for <strong>Tieban Shenshu</strong> (鐵板神數 / 铁板神数, also written 鐵版神數 — "Iron Plate Divine Numbers").</p>
+<p>Tieban Shenshu is a Qing-dynasty Chinese numerology system attributed by tradition to Shao Yong (邵雍, 1011–1077) of the Northern Song. It is known for <strong>kaoke</strong> (考刻) — narrowing a birth time to a specific fifteen-minute <em>ke</em> — and for mapping derived numbers to numbered verses (條文 / tiaowen) in a corpus of roughly twelve thousand entries.</p>
+<p>It is a historical divination text worth studying as literature, and a tradition whose origins and authenticity remain actively debated.</p>
+<p><strong>What we publish here:</strong></p>
+<ul>
+<li>Introductory material, terminology, and a research index</li>
+<li>Independent, runnable <strong>educational tools</strong> (no commercial engine involved)</li>
+<li>Citation methods and source provenance for public literature</li>
+<li>A small number of <strong>clearly attributed</strong> public excerpts</li>
+</ul>
+<p><strong>What we do not publish here:</strong></p>
+<ul>
+<li>The private commercial engine, the complete verse corpus, or the full kaoke rule set</li>
+<li>Commercial client source code, installers, licensing, or payment implementation</li>
+<li>Any customer name, birth data, reading report, or order record</li>
+</ul>
+<blockquote>
+<p><strong>The commercial software and its private algorithms are not part of this repository.</strong> For full functionality, visit the official website.</p>
+</blockquote>
+<hr />
+<h2 id="official-links">Official links</h2>
+<table>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>URL</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Official website</td>
+<td>https://tiebanshenshuapp.com</td>
+<td>Verified reachable</td>
+</tr>
+<tr>
+<td>Free trial</td>
+<td>https://tiebanshenshuapp.com/trial</td>
+<td>Verified as a live trial page</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>These are the <strong>only official entry points</strong>. This community does not distribute commercial software and does not claim lineage authority on behalf of any school.</p>
+</blockquote>
+<hr />
+<h2 id="quick-start-no-installation">Quick start (no installation)</h2>
+<p>This repository ships a <strong>zero-dependency</strong> educational tool. Python 3.9+ is all you need:</p>
+<pre><code class="language-bash">git clone https://github.com/tiebanshenshuapp/tiebanshenshu.git
+cd tiebanshenshu/demo
+
+# 1. Sexagenary cycle: Gregorian year -&gt; ganzhi
+python tieban_open_tools.py ganzhi 1984
+
+# 2. Look up a position in the 60-term cycle
+python tieban_open_tools.py jiazi 甲子
+
+# 3. Terminology lookup (labels &quot;traditional account&quot; vs &quot;scholarly discussion&quot;)
+python tieban_open_tools.py term 考刻
+
+# 4. Verse-number format check (synthetic samples only, no real verses)
+python tieban_open_tools.py check 4082
+
+# 5. Citation generator
+python tieban_open_tools.py cite &quot;皇极经世&quot;
+</code></pre>
+<p>The tool runs <strong>entirely locally</strong>. It makes no network calls, uploads nothing, and never asks for birth data. See <a href="demo/README.md">demo/README.md</a>.</p>
+<hr />
+<h2 id="documentation-map">Documentation map</h2>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overview</td>
+<td><a href="docs/en/index.md">docs/en/index.md</a></td>
+</tr>
+<tr>
+<td>Getting started</td>
+<td><a href="docs/en/getting-started.md">docs/en/getting-started.md</a></td>
+</tr>
+<tr>
+<td>Glossary</td>
+<td><a href="docs/en/glossary.md">docs/en/glossary.md</a></td>
+</tr>
+<tr>
+<td>History and debates</td>
+<td><a href="docs/en/history.md">docs/en/history.md</a></td>
+</tr>
+<tr>
+<td>Research methods</td>
+<td><a href="docs/en/research-methods.md">docs/en/research-methods.md</a></td>
+</tr>
+<tr>
+<td>FAQ</td>
+<td><a href="docs/en/faq.md">docs/en/faq.md</a></td>
+</tr>
+</tbody>
+</table>
+<p>Other languages: <a href="README.md">简体中文</a> ｜ <a href="README.zh-HK.md">繁體中文（香港／澳門）</a> ｜ <a href="README.zh-TW.md">正體中文（台灣）</a></p>
+<hr />
+<h2 id="how-we-treat-this-material">How we treat this material</h2>
+<p>Three rules.</p>
+<p><strong>1. Separate the evidence layers</strong></p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Meaning</th>
+<th>How we handle it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Classical text</td>
+<td>Content from Qing-era or earlier editions</td>
+<td>Quoted with edition and source noted</td>
+</tr>
+<tr>
+<td>Traditional account</td>
+<td>Lineage claims, school self-descriptions, folklore</td>
+<td>Explicitly labelled "traditional account", not treated as fact</td>
+</tr>
+<tr>
+<td>Scholarly discussion</td>
+<td>Verifiable philological research</td>
+<td>Sourced, with competing views allowed</td>
+</tr>
+<tr>
+<td>Community note</td>
+<td>Our own editorial explanation</td>
+<td>Marked as editorial</td>
+</tr>
+<tr>
+<td>Synthetic sample</td>
+<td>Fabricated data used only to demonstrate a format</td>
+<td><strong>Prominently labelled as fictitious</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. We do not claim orthodoxy</strong></p>
+<p>The origins, authorship, and transmission of Tieban Shenshu are genuinely disputed. As early as the Ming dynasty, Yang Shen (楊慎) criticised contemporaries for "falsely attributing <em>Dading shu</em> and <em>Chunzi shu</em> to Kangjie [Shao Yong]". We assert <strong>no</strong> claim of being "the only authentic lineage", "imperially transmitted secret", or "personally transmitted by Shao Yong".</p>
+<p><strong>3. We make no fate claims</strong></p>
+<p>This project is about <strong>texts and culture</strong>, not prediction services. As a historical divination text, Tieban Shenshu is not a basis for any prediction. Do not use it to make medical, financial, legal, or major life decisions.</p>
+<hr />
+<h2 id="contributing">Contributing</h2>
+<p>We welcome:</p>
+<ul>
+<li>Additional bibliographic references, editions, and page numbers</li>
+<li>Corrections to terminology and regional usage (Hong Kong / Taiwan)</li>
+<li>Improvements to the educational tool's readability and tests</li>
+<li>Reports of factual errors</li>
+<li>Methodological challenges to our approach</li>
+</ul>
+<p>Please read <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> and <a href="CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a> first.</p>
+<p><strong>Please do not submit</strong>: real birth data, personal names, reading reports, internal commercial material, or unattributed full verse texts.</p>
+<p>For security reports, see <a href="SECURITY.md">SECURITY.md</a>.</p>
+<hr />
+<h2 id="faq">FAQ</h2>
+<p><strong>Q: Does this repository contain all 12,000 verses?</strong>
+A: No. We include only a <strong>very small number</strong> of attributed public excerpts (cumulative cap: 30). The complete corpus is a private commercial asset.</p>
+<p><strong>Q: Can I use this code commercially?</strong>
+A: No. Our own new code is under <strong>PolyForm Noncommercial 1.0.0</strong> (source-available, noncommercial), and our documentation is under <strong>CC BY-NC 4.0</strong>. Note this is <strong>Source Available</strong>, not an OSI-approved open source licence.</p>
+<p><strong>Q: How does this relate to the official website?</strong>
+A: https://tiebanshenshuapp.com is the sole official entry point for the full commercial service. This repository is an independent knowledge and research project — it is neither the commercial edition nor a second divination site.</p>
+<p><strong>Q: Is the tool accurate?</strong>
+A: The tool performs only <strong>publicly verifiable deterministic computation</strong> (sexagenary conversion, index lookup, format checking). It does not implement the private derivation chain and produces no personal readings.</p>
+<p>More in the <a href="docs/en/faq.md">FAQ</a>.</p>
+<hr />
+<h2 id="licence-and-commercial-boundary">Licence and commercial boundary</h2>
+<table>
+<thead>
+<tr>
+<th>Content</th>
+<th>Licence</th>
+<th>Commercial use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Our own code (<code>demo/</code>, <code>scripts/</code>)</td>
+<td><a href="LICENSE">PolyForm Noncommercial 1.0.0</a></td>
+<td>❌ Not permitted</td>
+</tr>
+<tr>
+<td>Our own documentation (<code>docs/</code>, README)</td>
+<td><a href="LICENSE-DOCS">CC BY-NC 4.0</a></td>
+<td>❌ Not permitted</td>
+</tr>
+<tr>
+<td>Qing-era public-domain classical text</td>
+<td>Public domain</td>
+<td>✅ Free to use</td>
+</tr>
+<tr>
+<td>Third-party material</td>
+<td>See <a href="THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a></td>
+<td>Per its original licence</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Important</strong>: Our own new work is released as <strong>Source Available</strong> (source public, noncommercial licence). It is <strong>not</strong> OSI-approved open source. Licences such as MIT, Apache, and GPL permit commercial use; this project does not use them.</p>
+<p>Public-domain classical text is not itself copyrightable, and we claim no exclusive rights over it.</p>
+</blockquote>
+<hr />
+<h2 id="notice">Notice</h2>
+<ul>
+<li>There is no authoritative critical edition of the Tieban Shenshu corpus; manuscript copies differ in wording.</li>
+<li>This project is for cultural research, digital humanities, and education. It constitutes <strong>no basis for any prediction</strong>.</li>
+<li>This project provides no medical, financial, or legal advice.</li>
+<li>Brand and official entry point attribution: see <a href="NOTICE.md">NOTICE.md</a>.</li>
+</ul>
+<hr />
+<p><a href="https://tiebanshenshuapp.com">Official website</a> ｜ <a href="https://tiebanshenshuapp.com/trial">Free trial</a> ｜ <a href="CONTRIBUTING.md">Contributing</a> ｜ <a href="SECURITY.md">Security</a></p>
+</article>
+</body>
+</html>
