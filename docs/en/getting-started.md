@@ -1,3 +1,10 @@
+---
+title: "Getting Started with Tieban Shenshu"
+description: "A reading order for newcomers: the three concepts you must not confuse, common pitfalls, and runnable local educational tools."
+lang: en
+layout: default
+---
+
 # Getting Started
 
 > Five minutes to understand what this repository offers.
