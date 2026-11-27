@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         **提醒**：如果工具输出与某些命理软件不同，先看
-        [FAQ Q11](https://github.com/tiebanshenshuapp/tiebanshenshu/blob/main/docs/zh-hans/faq.md)，
+        [FAQ Q11](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/docs/zh-hans/faq.md)，
         很可能是**流派算法差异**而非 bug。
 
   - type: input

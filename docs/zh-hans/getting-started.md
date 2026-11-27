@@ -50,7 +50,7 @@ python --version
 ### 跑起来
 
 ```bash
-git clone https://github.com/tiebanshenshuapp/tiebanshenshu.git
+git clone https://github.com/tiebanshenshuapp-bot/tiebanshenshu.git
 cd tiebanshenshu/demo
 ```
 

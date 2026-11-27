@@ -244,7 +244,7 @@ https://tiebanshenshuapp.com/trial
 
 ## 还没解答？
 
-开 [Issue](https://github.com/tiebanshenshuapp/tiebanshenshu/issues)。
+开 [Issue](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/issues)。
 
 我们会认真回答，但如果问题超出范围（比如"帮我算一下"），
 我们会说明原因并请你走官方渠道。

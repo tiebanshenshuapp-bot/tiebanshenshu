@@ -2,7 +2,7 @@
 
 ## 项目归属
 
-本仓库（`tiebanshenshuapp/tiebanshenshu`）是**铁板神数软件**的公开研究社区与教学演示项目。
+本仓库（`tiebanshenshuapp-bot/tiebanshenshu`）是**铁板神数软件**的公开研究社区与教学演示项目。
 
 | 项目 | 内容 |
 |---|---|

@@ -49,7 +49,7 @@ Tieban Shenshu Community Edition
 本儲存庫自帶一個**零依賴**教學工具，用 Python 3.9+ 即可直接運行：
 
 ```bash
-git clone https://github.com/tiebanshenshuapp/tiebanshenshu.git
+git clone https://github.com/tiebanshenshuapp-bot/tiebanshenshu.git
 cd tiebanshenshu/demo
 
 # 1. 干支換算：公曆年 → 干支

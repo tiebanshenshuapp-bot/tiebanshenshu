@@ -180,7 +180,7 @@ non-commercial-licensed projects, divination advertising, or fabricated citation
 
 ## Not answered here?
 
-Open an [issue](https://github.com/tiebanshenshuapp/tiebanshenshu/issues).
+Open an [issue](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/issues).
 We will answer seriously — and tell you when a question is outside our scope.
 
 ---

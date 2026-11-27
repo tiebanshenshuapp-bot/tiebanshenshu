@@ -9,7 +9,7 @@
 
 | 项目 | 状态 | 证据 |
 |---|---|---|
-| 恢复并接管官方仓库 | ✅ | `tiebanshenshuapp/tiebanshenshu` 已克隆 |
+| 恢复并接管官方仓库 | ✅ | `tiebanshenshuapp-bot/tiebanshenshu` 已克隆 |
 | 四语 README 骨架 | ✅ | `README.md` / `.zh-HK` / `.zh-TW` / `.en` |
 | 可运行教学工具 | ✅ | `demo/tieban_open_tools.py`，26 项测试通过 |
 | 许可证矩阵 | ✅ | `LICENSE` + `LICENSE-DOCS` + `NOTICE.md` |

@@ -159,7 +159,7 @@ https://tiebanshenshuapp.com/trial
 
 ## 還沒解答？
 
-開 [Issue](https://github.com/tiebanshenshuapp/tiebanshenshu/issues)。
+開 [Issue](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/issues)。
 
 ---
 

@@ -49,7 +49,7 @@ It is a historical divination text worth studying as literature, and a tradition
 This repository ships a **zero-dependency** educational tool. Python 3.9+ is all you need:
 
 ```bash
-git clone https://github.com/tiebanshenshuapp/tiebanshenshu.git
+git clone https://github.com/tiebanshenshuapp-bot/tiebanshenshu.git
 cd tiebanshenshu/demo
 
 # 1. Sexagenary cycle: Gregorian year -> ganzhi

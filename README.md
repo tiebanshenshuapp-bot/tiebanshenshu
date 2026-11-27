@@ -47,7 +47,7 @@ Tieban Shenshu Community Edition
 本仓库自带一个**零依赖**的教学工具，用 Python 3.9+ 即可直接运行：
 
 ```bash
-git clone https://github.com/tiebanshenshuapp/tiebanshenshu.git
+git clone https://github.com/tiebanshenshuapp-bot/tiebanshenshu.git
 cd tiebanshenshu/demo
 
 # 1. 干支换算：公历年 → 干支

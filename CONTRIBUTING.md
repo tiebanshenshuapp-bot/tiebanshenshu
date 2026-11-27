@@ -153,6 +153,6 @@ chore(ci): 固定 gitleaks 版本
 
 ## 十、有问题？
 
-- 一般问题：开 [Issue](https://github.com/tiebanshenshuapp/tiebanshenshu/issues)
+- 一般问题：开 [Issue](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/issues)
 - 安全问题：见 [SECURITY.md](SECURITY.md)（**不要公开披露**）
 - 商业合作：见官方网站 https://tiebanshenshuapp.com
