@@ -1,3 +1,10 @@
+---
+title: "铁板神数上手指引"
+description: "从零开始了解铁板神数：先读什么、三个必须分清的概念、常见误区，以及可本地运行的教学工具。"
+lang: zh-Hans
+layout: default
+---
+
 # 快速上手 / Getting Started
 
 > 5 分钟了解这个仓库能给你什么。
