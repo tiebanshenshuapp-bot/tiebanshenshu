@@ -110,32 +110,8 @@ jobs:
             done
           done
           echo "OK: 四语互链完整"
-      - name: 相对链接有效性
-        run: |
-          python3 - <<'PY'
-          import re, os, sys
-          bad = []
-          for root, dirs, files in os.walk('.'):
-              dirs[:] = [d for d in dirs if d not in ('.git','__pycache__')]
-              for fn in files:
-                  if not fn.endswith('.md'):
-                      continue
-                  p = os.path.join(root, fn)
-                  txt = open(p, encoding='utf-8', errors='replace').read()
-                  for m in re.finditer(r'\]\((?!https?://|#|mailto:)([^)#]+)', txt):
-                      tgt = m.group(1).strip()
-                      if not tgt:
-                          continue
-                      full = os.path.normpath(os.path.join(root, tgt))
-                      if not os.path.exists(full):
-                          bad.append(f'{p} -> {tgt}')
-          if bad:
-              print('发现失效的相对链接：')
-              for b in bad:
-                  print('  ', b)
-              sys.exit(1)
-          print('OK: 所有相对链接有效')
-          PY
+      - name: 相对链接有效性（支持 Jekyll .html -> .md）
+        run: python scripts/check_links.py
 
   links:
     name: 官网链接存在性

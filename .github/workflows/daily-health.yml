@@ -38,67 +38,8 @@ jobs:
       - name: Markdown 结构
         run: python scripts/check_markdown_structure.py
 
-      - name: 相对链接检查
-        run: |
-          python3 - <<'PY'
-          import os, re, sys
-          bad = []
-          n = 0
-          for dp, ds, fs in os.walk('.'):
-              ds[:] = [d for d in ds if d not in ('.git', '__pycache__', '_preview')]
-              for f in fs:
-                  if not f.endswith('.md'):
-                      continue
-                  p = os.path.join(dp, f)
-                  t = open(p, encoding='utf-8', errors='replace').read()
-                  for m in re.finditer(r'\]\((?!https?://|#|mailto:)([^)#\s]+)', t):
-                      tg = m.group(1).strip()
-                      if not tg:
-                          continue
-                      n += 1
-                      if not os.path.exists(os.path.normpath(os.path.join(dp, tg))):
-                          bad.append(f'{p} -> {tg}')
-          print(f'相对链接 {n} 条')
-          if bad:
-              print('失效:')
-              for b in bad:
-                  print(' ', b)
-              sys.exit(1)
-          print('OK 全部有效')
-          PY
-
-      - name: 外部链接健康检查
-        run: |
-          python3 - <<'PY'
-          import re, os, sys, urllib.request, ssl
-          ctx = ssl.create_default_context()
-          urls = set()
-          for dp, ds, fs in os.walk('.'):
-              ds[:] = [d for d in ds if d not in ('.git', '__pycache__', '_preview')]
-              for f in fs:
-                  if not f.endswith('.md'):
-                      continue
-                  t = open(os.path.join(dp, f), encoding='utf-8', errors='replace').read()
-                  for m in re.finditer(r'https?://[^\s\)\]\>"\'，。]+', t):
-                      u = m.group().strip('.,;:*_ 。，')  # 去除 Markdown 强调符与标点
-                      # 只检查我们自己的关键域名与外链
-                      urls.add(u)
-          critical = {u for u in urls if 'tiebanshenshuapp.com' in u}
-          print(f'发现外链 {len(urls)} 条，其中官网 {len(critical)} 条')
-          fail = []
-          for u in sorted(critical):
-              try:
-                  req = urllib.request.Request(u, method='HEAD',
-                          headers={'User-Agent': 'Mozilla/5.0 (compatible; tieban-ci/1.0)'})
-                  with urllib.request.urlopen(req, timeout=20, context=ctx) as r:
-                      print(f'  {r.status} {u}')
-              except Exception as e:
-                  fail.append((u, str(e)[:80]))
-                  print(f'  FAIL {u} :: {str(e)[:80]}')
-          if fail:
-              print(f'::error::{len(fail)} 条官网链接不可达')
-              sys.exit(1)
-          PY
+      - name: 链接检查（内部相对链接 + 官网外链）
+        run: python scripts/check_links.py --external
 
       - name: 内容完整性统计
         run: |
