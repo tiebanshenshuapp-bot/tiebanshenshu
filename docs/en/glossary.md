@@ -1,3 +1,10 @@
+---
+title: "Tieban Shenshu Glossary"
+description: "Terminology index for Tieban Shenshu: kaoke, dingfen, tiaowen, taixuan numbers, yuantang and gua-qi, each with an evidence grade."
+lang: en
+layout: default
+---
+
 # Glossary
 
 > Every entry carries an **evidence level**. See [the legend](#evidence-levels).
