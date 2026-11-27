@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'zh-Hans' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | default: site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta name="twitter:card" content="summary">
+{%- if page.lang %}
+<meta property="og:locale" content="{{ page.lang | replace: '-', '_' }}">
+{%- endif %}
+<style>
+:root{--ink:#2b2118;--gold:#855c1e;--paper:#fdfaf2;--muted:#6b5a45}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font-family:"Songti SC","SimSun","Noto Serif SC",Georgia,serif;line-height:1.85}
+header{border-bottom:3px double var(--gold);background:#fbf6ec}
+header .wrap{max-width:860px;margin:0 auto;padding:14px 20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+header a{color:var(--gold);text-decoration:none;font-weight:600}
+header .brand{font-size:17px;letter-spacing:2px}
+header nav{display:flex;gap:12px;font-size:14px;margin-left:auto;flex-wrap:wrap}
+main{max-width:860px;margin:0 auto;padding:34px 20px 60px}
+h1{font-size:26px;letter-spacing:2px;text-align:center;margin:8px 0 26px;
+ padding-bottom:14px;border-bottom:1px solid #d9c9ad}
+h2{font-size:19px;margin:32px 0 12px;padding-left:10px;border-left:4px solid var(--gold)}
+h3{font-size:16px;margin:22px 0 8px;color:var(--gold)}
+p{margin:0 0 14px}
+table{border-collapse:collapse;width:100%;margin:14px 0 20px;font-size:14.5px;display:block;overflow-x:auto}
+th,td{border:1px solid #ddd0b8;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#f3ebda;font-weight:600}
+blockquote{margin:16px 0;padding:10px 16px;border-left:4px solid var(--gold);
+ background:#f8f2e6;color:var(--muted)}
+code{background:#f3ebda;padding:1px 5px;border-radius:3px;font-size:13.5px}
+pre{background:#f3ebda;padding:14px;overflow-x:auto;border-radius:4px}
+a{color:#8a4b1f}
+hr{border:0;border-top:1px solid #ddd0b8;margin:30px 0}
+footer{max-width:860px;margin:0 auto;padding:20px;border-top:3px double var(--gold);
+ font-size:13.5px;color:var(--muted)}
+footer a{color:var(--gold)}
+.cta{display:inline-block;margin:6px 8px 0 0;padding:8px 16px;background:var(--gold);color:#fff;
+ border-radius:3px;text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="brand">鐵板神數 · 公开研究知识库</span>
+  <nav>
+    <a href="{{ site.baseurl }}/zh-hans/">简中</a>
+    <a href="{{ site.baseurl }}/zh-tw/">繁中·台</a>
+    <a href="{{ site.baseurl }}/zh-hk/">繁中·港</a>
+    <a href="{{ site.baseurl }}/en/">EN</a>
+  </nav>
+</div></header>
+<main>
+{{ content }}
+<p style="margin-top:34px">
+  <a class="cta" href="https://tiebanshenshuapp.com/trial">免费试算</a>
+  <a class="cta" href="https://tiebanshenshuapp.com">官方网站</a>
+</p>
+</main>
+<footer>
+  本页为公开研究资料，不含商业 Core、完整条文语料库与客户数据。
+  官网：<a href="https://tiebanshenshuapp.com">tiebanshenshuapp.com</a>
+</footer>
+</body>
+</html>
