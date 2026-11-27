@@ -222,4 +222,4 @@ More in the [FAQ](docs/en/faq.md).
 
 ---
 
-[Official website](https://tiebanshenshuapp.com) ｜ [Free trial](https://tiebanshenshuapp.com/trial) ｜ [Contributing](CONTRIBUTING.md) ｜ [Security](SECURITY.md)
+[Official website](https://tiebanshenshuapp.com) ｜ [Free trial](https://tiebanshenshuapp.com/trial) ｜ [Discussions](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/discussions) ｜ [Contributing](CONTRIBUTING.md) ｜ [Security](SECURITY.md)

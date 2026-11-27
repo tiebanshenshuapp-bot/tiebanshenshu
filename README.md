@@ -219,6 +219,6 @@ A：工具只做**可公开核查的确定性计算**（干支换算、序数查
 
 <div align="center">
 
-[官方网站](https://tiebanshenshuapp.com) ｜ [免费试算](https://tiebanshenshuapp.com/trial) ｜ [参与贡献](CONTRIBUTING.md) ｜ [安全问题](SECURITY.md)
+[官方网站](https://tiebanshenshuapp.com) ｜ [免费试算](https://tiebanshenshuapp.com/trial) ｜ [讨论区](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/discussions) ｜ [参与贡献](CONTRIBUTING.md) ｜ [安全问题](SECURITY.md)
 
 </div>

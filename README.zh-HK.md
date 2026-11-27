@@ -223,6 +223,6 @@ A：工具只做**可公開核查的確定性計算**（干支換算、序號查
 
 <div align="center">
 
-[官方網站](https://tiebanshenshuapp.com) ｜ [免費試算](https://tiebanshenshuapp.com/trial) ｜ [參與貢獻](CONTRIBUTING.md) ｜ [安全問題](SECURITY.md)
+[官方網站](https://tiebanshenshuapp.com) ｜ [免費試算](https://tiebanshenshuapp.com/trial) ｜ [討論區](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/discussions) ｜ [參與貢獻](CONTRIBUTING.md) ｜ [安全問題](SECURITY.md)
 
 </div>
