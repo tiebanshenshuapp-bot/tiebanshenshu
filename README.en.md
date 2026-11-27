@@ -16,6 +16,8 @@
   24 documents in 4 languages · 6 CLI commands · 26 unit tests · 5 CI checks
 </p>
 
+🌐 **Online knowledge base (GitHub Pages)**: [read now](https://tiebanshenshuapp-bot.github.io/tiebanshenshu/) — 25 pages in 4 languages, no clone needed.
+
 ---
 
 ## Six entry points
