@@ -1,3 +1,10 @@
+---
+title: "铁板神数研究方法"
+description: "本仓的判断标准与引用规范：证据分层、如何评价一种说法的可信度、如何核对我们给出的任何结论。"
+lang: zh-Hans
+layout: default
+---
+
 # 研究方法 / Research Methods
 
 > 本文说明本项目**如何判断、如何引用、如何处理争议**。
