@@ -1,3 +1,10 @@
+---
+title: "鐵板神數 · 公开研究知识库 | Tieban Shenshu Research"
+description: "铁板神数（Tieban Shenshu / 鐵板神數）公开研究资料：四语术语索引、历史源流、研究方法与可运行教学示例。非商业软件源码，官网 https://tiebanshenshuapp.com"
+lang: zh-Hans
+layout: default
+---
+
 # 鐵板神數 · 公开研究知识库
 
 > Tieban Shenshu — public research notes, terminology index and runnable educational demos.

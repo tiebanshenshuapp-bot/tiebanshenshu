@@ -6,6 +6,21 @@
 <title>{{ page.title | default: site.title }}</title>
 <meta name="description" content="{{ page.description | default: site.description }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
+{%- comment -%}
+  多语言 hreflang：docs/{lang}/{page}.md 结构下，去掉语言段即得对应页。
+  根 / 为语言选择页，标为 x-default。
+{%- endcomment -%}
+{%- assign langdirs = "zh-hans,zh-hk,zh-tw,en" | split: "," -%}
+{%- assign langtags = "zh-Hans,zh-Hant-HK,zh-Hant-TW,en" | split: "," -%}
+{%- assign rest = page.url | remove_first: "/zh-hans" | remove_first: "/zh-hk" | remove_first: "/zh-tw" | remove_first: "/en" -%}
+{%- if rest == page.url -%}
+<link rel="alternate" hreflang="x-default" href="{{ site.baseurl }}/">
+{%- else -%}
+{%- for d in langdirs -%}
+<link rel="alternate" hreflang="{{ langtags[forloop.index0] }}" href="{{ site.baseurl }}/{{ d }}{{ rest }}">
+{%- endfor -%}
+<link rel="alternate" hreflang="x-default" href="{{ site.baseurl }}/">
+{%- endif -%}
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{ page.title | default: site.title }}">
 <meta property="og:description" content="{{ page.description | default: site.description }}">
