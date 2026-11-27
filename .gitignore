@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 测试与覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 构建产物
+dist/
+build/
+*.log
+
+# 【安全】以下内容绝不入库
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*secret*
+*credential*
+_internal/
+PRIVATE_*
+HANDOFF*
+CURRENT*
+*.db
+*.sqlite3

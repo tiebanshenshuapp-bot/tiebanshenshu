@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全问题（请勿公开披露）
+    url: https://github.com/tiebanshenshuapp/tiebanshenshu/security/policy
+    about: 发现安全漏洞请通过私下渠道报告，不要在公开 Issue 中披露细节
+  - name: 官方网站
+    url: https://tiebanshenshuapp.com
+    about: 需要完整功能、免费试算或商业服务，请访问官方网站

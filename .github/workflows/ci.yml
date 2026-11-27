@@ -1,0 +1,120 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: 教学工具测试
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: 设置 Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.11"
+      - name: 运行单元测试
+        working-directory: demo
+        run: python -m unittest discover -s tests -v
+      - name: 验证工具无网络调用
+        working-directory: demo
+        run: |
+          if grep -qE "import[[:space:]]+(requests|urllib|socket|http)" tieban_open_tools.py; then
+            echo "::error::教学工具中出现网络相关 import，违反设计原则"
+            exit 1
+          fi
+          echo "OK: 未发现网络调用"
+      - name: 验证工具可执行
+        working-directory: demo
+        run: |
+          python tieban_open_tools.py ganzhi 1984
+          python tieban_open_tools.py jiazi 甲子
+          python tieban_open_tools.py --json ganzhi 2026
+
+  safety:
+    name: 公开发布安全门
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: 设置 Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.11"
+      - name: 运行安全门禁
+        run: python scripts/check_public_safety.py
+      - name: 检查大文件
+        run: |
+          find . -path ./.git -prune -o -type f -size +1M -print | tee /tmp/big.txt
+          if [ -s /tmp/big.txt ]; then
+            echo "::error::发现超过 1MB 的文件"
+            exit 1
+          fi
+
+  docs:
+    name: 文档一致性
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: 四语首行与互链
+        run: |
+          set -e
+          head -1 README.md       | grep -q "^# 铁板神数软件" || { echo "::error::README.md 首行不符"; exit 1; }
+          head -1 README.zh-HK.md | grep -q "^# 鐵板神數軟件" || { echo "::error::README.zh-HK.md 首行不符"; exit 1; }
+          head -1 README.zh-TW.md | grep -q "^# 鐵板神數軟體" || { echo "::error::README.zh-TW.md 首行不符"; exit 1; }
+          head -1 README.en.md    | grep -q "^# Tieban Shenshu" || { echo "::error::README.en.md 首行不符"; exit 1; }
+          echo "OK: 四语首行正确"
+          for f in README.md README.zh-HK.md README.zh-TW.md README.en.md; do
+            for t in README.md README.zh-HK.md README.zh-TW.md README.en.md; do
+              if [ "$f" != "$t" ]; then
+                grep -q "$t" "$f" || { echo "::error::$f 缺少指向 $t 的链接"; exit 1; }
+              fi
+            done
+          done
+          echo "OK: 四语互链完整"
+      - name: 相对链接有效性
+        run: |
+          python3 - <<'PY'
+          import re, os, sys
+          bad = []
+          for root, dirs, files in os.walk('.'):
+              dirs[:] = [d for d in dirs if d not in ('.git','__pycache__')]
+              for fn in files:
+                  if not fn.endswith('.md'):
+                      continue
+                  p = os.path.join(root, fn)
+                  txt = open(p, encoding='utf-8', errors='replace').read()
+                  for m in re.finditer(r'\]\((?!https?://|#|mailto:)([^)#]+)', txt):
+                      tgt = m.group(1).strip()
+                      if not tgt:
+                          continue
+                      full = os.path.normpath(os.path.join(root, tgt))
+                      if not os.path.exists(full):
+                          bad.append(f'{p} -> {tgt}')
+          if bad:
+              print('发现失效的相对链接：')
+              for b in bad:
+                  print('  ', b)
+              sys.exit(1)
+          print('OK: 所有相对链接有效')
+          PY
+
+  links:
+    name: 官网链接存在性
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: 检查官网链接
+        run: |
+          grep -q "https://tiebanshenshuapp.com" README.md || { echo "::error::README 缺少官网链接"; exit 1; }
+          grep -q "https://tiebanshenshuapp.com/trial" README.md || { echo "::error::README 缺少试算入口"; exit 1; }
+          echo "OK"

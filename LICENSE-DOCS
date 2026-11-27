@@ -1,0 +1,40 @@
+# 文档许可 / Documentation License
+
+本仓库的**自有原创文档**（`docs/`、`README*.md`、`research/`、`samples/` 中的编者说明部分）
+采用 **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**。
+
+This repository's **original documentation** is licensed under
+**Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
+
+- 许可全文 / Full text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+- 人类可读摘要 / Human-readable summary: https://creativecommons.org/licenses/by-nc/4.0/
+
+## 你可以 / You may
+
+- **共享** — 以任何媒介或格式复制、发行本作品
+- **演绎** — 修改、转换、以本作品为基础进行创作（非商业目的）
+
+前提是：
+
+- **署名** — 注明来源、附上许可链接、标明是否作了修改
+- **非商业性使用** — 不得将本作品用于商业目的
+
+## 不适用本许可的内容 / Not covered
+
+| 内容 | 状态 |
+|---|---|
+| 本项目自有**代码**（`demo/`、`scripts/`） | 适用 [PolyForm Noncommercial 1.0.0](LICENSE) |
+| **清代及以前的古籍原文** | 属**公有领域**（Public Domain），不受版权保护 |
+| **第三方素材** | 按其原始许可，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) |
+
+> 公有领域的古籍原文本身不产生著作权，本许可**不对其主张任何独占权利**。
+> Public-domain classical text is not itself copyrightable, and this license claims no exclusive rights over it.
+
+## 商业使用 / Commercial use
+
+如需商业授权，请通过官方网站的联系方式洽谈：
+https://tiebanshenshuapp.com
+
+---
+
+*本许可方案尚待 OWNER 最终确认。确认前，本文件代表项目的当前声明。*

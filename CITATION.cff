@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "引用本仓库时请使用以下格式。若引用的是古籍条文，请同时注明你所依据的具体版本。"
+title: "铁板神数软件 — 传统文化研究与教学演示 / Tieban Shenshu Community Edition"
+abstract: >
+  铁板神数（鐵板神數 / Tieban Shenshu）的公开研究社区与教学演示项目。
+  提供入门知识、术语说明、文献索引与独立可运行的教学工具。
+  本项目不包含商业私有引擎、完整条文库或客户资料。
+  项目定位为传统文化研究、数字人文与教学用途，不构成任何命运预测依据。
+authors:
+  - name: "Tieban Shenshu Community"
+type: software
+license: LicenseRef-PolyForm-Noncommercial-1.0.0
+license-url: "https://polyformproject.org/licenses/noncommercial/1.0.0"
+repository-code: "https://github.com/tiebanshenshuapp/tiebanshenshu"
+url: "https://tiebanshenshuapp.com"
+keywords:
+  - tiebanshenshu
+  - tieban-shenshu
+  - 铁板神数
+  - 鐵板神數
+  - 铁版神数
+  - chinese-numerology
+  - chinese-metaphysics
+  - traditional-chinese-culture
+  - digital-humanities
+  - educational
+version: "0.1.0"
+date-released: "2026-11-27"
+notes: >
+  1. 本项目代码采用 PolyForm Noncommercial 1.0.0（禁止商业使用），
+     文档采用 CC BY-NC 4.0。这是 Source Available，不是 OSI 开源。
+  2. 清代及以前的古籍原文属公有领域，本项目不对其主张独占权利。
+  3. 「铁板神数」为历史术数体系通称，本项目不主张代表任何流派或传承。
+  4. 商业软件与私有算法不在此仓库，完整功能见 https://tiebanshenshuapp.com

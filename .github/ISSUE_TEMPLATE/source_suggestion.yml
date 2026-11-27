@@ -1,0 +1,54 @@
+name: 文献或资料来源 / Source Suggestion
+description: 提供古籍版本、书目、研究文献等来源
+title: "[文献] "
+labels: ["research", "needs-license-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢提供来源。请**不要**上传整本扫描件或大段条文全文，
+        先提供**书目信息**，我们判断后再决定是否需要具体内容。
+
+  - type: input
+    id: title
+    attributes:
+      label: 书名 / 文献名
+    validations:
+      required: true
+
+  - type: input
+    id: edition
+    attributes:
+      label: 版本信息
+      description: 刊本年代、出版社、影印或点校、藏书机构
+      placeholder: "清乾隆XX年刊本 / XX出版社 19XX 年影印本 / 某图书馆藏"
+    validations:
+      required: true
+
+  - type: input
+    id: pages
+    attributes:
+      label: 相关页码或卷次（如知道）
+    validations:
+      required: false
+
+  - type: dropdown
+    id: rights
+    attributes:
+      label: 权利状态
+      options:
+        - 清代及以前刊本（应为公有领域）
+        - 民国时期出版物（需核实）
+        - 现代点校 / 注释本（可能有新著作权）
+        - 现代研究著作（受版权保护）
+        - 不确定
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: 这份资料的价值
+      description: 它能解决什么问题？与现有资料有何不同？
+    validations:
+      required: true

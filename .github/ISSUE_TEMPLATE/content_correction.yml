@@ -1,0 +1,63 @@
+name: 内容纠错 / Content Correction
+description: 报告文档中的事实、术语或翻译错误
+title: "[纠错] "
+labels: ["documentation", "needs-evidence"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你帮助改进本项目的准确性。
+        **请注意：没有依据的"我记得是这样"我们无法采纳，但欢迎提供线索让我们去查。**
+
+  - type: input
+    id: location
+    attributes:
+      label: 出错的位置
+      description: 文件路径 + 章节，或直接粘贴那句话
+      placeholder: "例如：docs/zh-hans/glossary.md · 「考刻」条目"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: 现在写的是什么
+      description: 粘贴原文
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: 你认为应该是什么
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 依据（重要）
+      description: 书名、版本、页码、链接。没有依据也可以提，但请说明是"推测"还是"有据"
+      placeholder: |
+        例如：
+        书名：《升庵集》
+        版本：XX出版社 19XX 年点校本
+        页码：卷 X 第 XX 页
+        或链接：https://...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: 你觉得这属于哪一类问题
+      options:
+        - 事实错误（年代、人名、事件）
+        - 术语理解错误
+        - 证据层级标注不当（把传说当史实）
+        - 翻译 / 用语问题
+        - 引用格式不规范
+        - 其他
+    validations:
+      required: true
