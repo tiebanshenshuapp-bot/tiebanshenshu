@@ -11,6 +11,23 @@
 
 ---
 
+## [0.1.1] - 2026-11-27
+
+### Added
+- 品牌视觉：`assets/brand/banner.png` (1200×320)、`assets/brand/logo.png` (512×512)、
+  `assets/social-preview/social-preview.png` (1280×640)
+- `scripts/build_brand_assets.py` — 用 Pillow 精确绘制品牌位图
+- 四语 README 顶部品牌横幅与「六大入口」导航
+- 各语言 README 新增「版本与状态」章节（含无流量数据的诚实声明）
+
+### Changed
+- README 首屏重构：横幅 → 标题 → 四语导航 → 真实数据行 → 六大入口 → 官方入口
+
+### Fixed
+- 修正 20 处指向无写权限仓库的失效链接（详见 [0.1.0] 之后提交 `f3f34d9`）
+
+---
+
 ## [0.1.0] - 2026-11-27
 
 首次公开候选版本（本地构建，等待写入权限后发布）。

@@ -1,10 +1,40 @@
-# 铁板神数软件
+<p align="center">
+  <img src="assets/brand/banner.png" alt="铁板神数软件 · Tieban Shenshu Community Edition" width="100%">
+</p>
 
-Tieban Shenshu Community Edition
+<h1 align="center">铁板神数软件</h1>
+<p align="center"><strong>Tieban Shenshu Community Edition</strong></p>
 
-**简体中文** ｜ [繁體中文（香港／澳門）](README.zh-HK.md) ｜ [正體中文（台灣）](README.zh-TW.md) ｜ [English](README.en.md)
+<p align="center">
+  <strong>简体中文</strong> ｜
+  <a href="README.zh-HK.md">繁體中文（香港／澳門）</a> ｜
+  <a href="README.zh-TW.md">正體中文（台灣）</a> ｜
+  <a href="README.en.md">English</a>
+</p>
 
-> 传统文化研究与教学演示 · Community Research & Educational Demos
+<p align="center">
+  24 篇四语文档 · 6 个教学命令 · 26 项单元测试 · 5 项 CI 检查
+</p>
+
+---
+
+## 六大入口
+
+| | 入口 | 说明 |
+|---|---|---|
+| 📖 | **[入门总览](docs/zh-hans/index.md)** | 铁板神数是什么、与八字的区别、源流哪些清楚哪些不清楚 |
+| 🔤 | **[术语表](docs/zh-hans/glossary.md)** | 考刻 / 定分 / 条文 / 太玄数，每条标注**证据层级** |
+| 🛠 | **[教学工具](demo/README.md)** | 零依赖 Python 工具，6 个命令，本地运行不上传数据 |
+| 📚 | **[源流与争议](docs/zh-hans/history.md)** | 时间线、杨慎的批评、哪些问题至今无解 |
+| 🔬 | **[研究方法](docs/zh-hans/research-methods.md)** | 我们的判断标准、引用规范、如何评价我们的可信度 |
+| 🌍 | **[公开项目调查](research/README.md)** | 19 个 GitHub 相关项目的许可分析（可复现） |
+
+<p align="center">
+  <a href="https://tiebanshenshuapp.com"><strong>官方网站</strong></a> ｜
+  <a href="https://tiebanshenshuapp.com/trial"><strong>免费试算</strong></a> ｜
+  <a href="CONTRIBUTING.md">参与贡献</a> ｜
+  <a href="docs/zh-hans/faq.md">常见问题</a>
+</p>
 
 ---
 
@@ -140,6 +170,24 @@ A：官网 https://tiebanshenshuapp.com 是提供完整商业服务的唯一正�
 A：工具只做**可公开核查的确定性计算**（干支换算、序数查询、格式校验）。它不实现私有取数链，不给出任何个人命运结论。
 
 更多问题见 [FAQ](docs/zh-hans/faq.md)。
+
+---
+
+## 版本与状态
+
+| 项目 | 值 |
+|---|---|
+| 社区版版本 | **v0.1.0**（独立编号，与商业软件版本无关） |
+| 文档 | 24 篇（简体 6 / 香港 6 / 台湾 6 / 英文 6） |
+| 教学工具 | 6 个命令，零外部依赖 |
+| 测试 | 26 项，全部通过 |
+| CI | 5 项检查（测试 / 安全门 / Markdown / 文档 / 链接） |
+| 公开条文示例 | **0 条**（底本与权利未核实前不发布） |
+| 内容更新 | 见 [CHANGELOG.md](CHANGELOG.md) |
+| 计划 | 见 [ROADMAP.md](ROADMAP.md) |
+
+> **诚实说明**：本仓库当前**没有任何真实流量数据**。我们不刷 Star、不买流量、不伪造评价。
+> 访问量、搜索收录等信息在获得可验证来源前一律标注为「未知」。
 
 ---
 

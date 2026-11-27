@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="铁板神数软件 标识">
+  <title>铁板神数软件 · Tieban Shenshu 标识</title>
+  <defs>
+    <linearGradient id="lg-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBF7EE"/>
+      <stop offset="100%" stop-color="#EDE4D2"/>
+    </linearGradient>
+    <linearGradient id="lg-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C9A961"/>
+      <stop offset="100%" stop-color="#9C7F42"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 外框：宋版书口 -->
+  <rect x="16" y="16" width="480" height="480" rx="8" fill="url(#lg-paper)"/>
+  <rect x="16" y="16" width="480" height="480" rx="8" fill="none" stroke="#1B1B1B" stroke-width="6"/>
+  <rect x="34" y="34" width="444" height="444" rx="4" fill="none" stroke="#1B1B1B" stroke-opacity="0.35" stroke-width="2"/>
+
+  <!-- 内框：铜金细线 -->
+  <rect x="62" y="62" width="388" height="388" fill="none" stroke="url(#lg-gold)" stroke-width="1.5" stroke-opacity="0.85"/>
+
+  <!-- 版心竖线 -->
+  <line x1="256" y1="86" x2="256" y2="426" stroke="#1B1B1B" stroke-opacity="0.12" stroke-width="1"/>
+
+  <!-- 主字：铁板（朱砂）-->
+  <text x="256" y="212" font-family="'Songti SC','SimSun','Noto Serif SC','Source Han Serif SC',serif"
+        font-size="104" font-weight="700" fill="#9D2933" text-anchor="middle" letter-spacing="10">铁板</text>
+
+  <!-- 副字：神数（墨色）-->
+  <text x="256" y="330" font-family="'Songti SC','SimSun','Noto Serif SC','Source Han Serif SC',serif"
+        font-size="104" font-weight="700" fill="#141414" text-anchor="middle" letter-spacing="10">神数</text>
+
+  <!-- 底部：TIEBAN SHENSHU -->
+  <line x1="130" y1="366" x2="382" y2="366" stroke="url(#lg-gold)" stroke-width="1.2"/>
+  <text x="256" y="396" font-family="Georgia,'Times New Roman',serif"
+        font-size="17" fill="#A8894E" text-anchor="middle" letter-spacing="5.5">TIEBAN SHENSHU</text>
+  <text x="256" y="422" font-family="'Helvetica Neue',Arial,sans-serif"
+        font-size="10.5" fill="#8A8A8A" text-anchor="middle" letter-spacing="2.4">COMMUNITY EDITION</text>
+
+  <!-- 四角装饰 -->
+  <g stroke="#1B1B1B" stroke-width="2.5" stroke-linecap="square" opacity="0.55">
+    <path d="M62 96 L62 62 L96 62"/>
+    <path d="M416 62 L450 62 L450 96"/>
+    <path d="M450 416 L450 450 L416 450"/>
+    <path d="M96 450 L62 450 L62 416"/>
+  </g>
+</svg>

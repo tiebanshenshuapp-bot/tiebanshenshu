@@ -1,10 +1,40 @@
-# 鐵板神數軟體
+<p align="center">
+  <img src="assets/brand/banner.png" alt="鐵板神數軟體 · Tieban Shenshu Community Edition" width="100%">
+</p>
 
-Tieban Shenshu Community Edition
+<h1 align="center">鐵板神數軟體</h1>
+<p align="center"><strong>Tieban Shenshu Community Edition</strong></p>
 
-[简体中文](README.md) ｜ [繁體中文（香港／澳門）](README.zh-HK.md) ｜ **正體中文（台灣）** ｜ [English](README.en.md)
+<p align="center">
+  <a href="README.md">简体中文</a> ｜
+  <a href="README.zh-HK.md">繁體中文（香港／澳門）</a> ｜
+  <strong>正體中文（台灣）</strong> ｜
+  <a href="README.en.md">English</a>
+</p>
 
-> 傳統文化研究與教學示範 · Community Research & Educational Demos
+<p align="center">
+  24 篇四語文件 · 6 個教學指令 · 26 項單元測試 · 5 項 CI 檢查
+</p>
+
+---
+
+## 六大入口
+
+| | 入口 | 說明 |
+|---|---|---|
+| 📖 | **[入門總覽](docs/zh-tw/index.md)** | 鐵板神數是什麼、與八字的區別、源流哪些清楚哪些不清楚 |
+| 🔤 | **[術語表](docs/zh-tw/glossary.md)** | 考刻 / 定分 / 條文 / 太玄數，每條標註**證據層級** |
+| 🛠 | **[教學工具](demo/README.md)** | 零依賴 Python 工具，6 個指令，本地執行不上傳資料 |
+| 📚 | **[源流與爭議](docs/zh-tw/history.md)** | 時間線、楊慎的批評、哪些問題至今無解 |
+| 🔬 | **[研究方法](docs/zh-tw/research-methods.md)** | 我們的判斷標準、引用規範、如何評價我們的可信度 |
+| 🌍 | **[公開專案調查](research/README.md)** | 19 個 GitHub 相關專案的授權分析（可重現） |
+
+<p align="center">
+  <a href="https://tiebanshenshuapp.com"><strong>官方網站</strong></a> ｜
+  <a href="https://tiebanshenshuapp.com/trial"><strong>免費試算</strong></a> ｜
+  <a href="CONTRIBUTING.md">參與貢獻</a> ｜
+  <a href="docs/zh-tw/faq.md">常見問題</a>
+</p>
 
 ---
 
@@ -142,6 +172,24 @@ A：官網 https://tiebanshenshuapp.com 是提供完整商業服務的唯一正�
 A：工具只做**可公開核查的確定性計算**（干支換算、序號查詢、格式檢查）。它不實作私有取數鏈，不給出任何個人命運結論。
 
 更多問題見 [常見問題](docs/zh-tw/faq.md)。
+
+---
+
+## 版本与状态
+
+| 项目 | 值 |
+|---|---|
+| 社区版版本 | **v0.1.0**（独立编号，与商业软件版本无关） |
+| 文档 | 24 篇（简体 6 / 香港 6 / 台湾 6 / 英文 6） |
+| 教学工具 | 6 个命令，零外部依赖 |
+| 测试 | 26 项，全部通过 |
+| CI | 5 项检查（测试 / 安全门 / Markdown / 文档 / 链接） |
+| 公开条文示例 | **0 条**（底本与权利未核实前不发布） |
+| 内容更新 | 见 [CHANGELOG.md](CHANGELOG.md) |
+| 计划 | 见 [ROADMAP.md](ROADMAP.md) |
+
+> **诚实说明**：本仓库当前**没有任何真实流量数据**。我们不刷 Star、不买流量、不伪造评价。
+> 访问量、搜索收录等信息在获得可验证来源前一律标注为「未知」。
 
 ---
 

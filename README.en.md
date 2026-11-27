@@ -1,10 +1,40 @@
-# Tieban Shenshu
+<p align="center">
+  <img src="assets/brand/banner.png" alt="Tieban Shenshu Community Edition" width="100%">
+</p>
 
-**Tieban Shenshu Community Edition**
+<h1 align="center">Tieban Shenshu</h1>
+<p align="center"><strong>Tieban Shenshu Community Edition</strong></p>
 
-[简体中文](README.md) ｜ [繁體中文（香港／澳門）](README.zh-HK.md) ｜ [正體中文（台灣）](README.zh-TW.md) ｜ **English**
+<p align="center">
+  <a href="README.md">简体中文</a> ｜
+  <a href="README.zh-HK.md">繁體中文 (HK/MO)</a> ｜
+  <a href="README.zh-TW.md">正體中文 (TW)</a> ｜
+  <strong>English</strong>
+</p>
 
-> Community research and educational demos for a classical Chinese divination text.
+<p align="center">
+  24 documents in 4 languages · 6 CLI commands · 26 unit tests · 5 CI checks
+</p>
+
+---
+
+## Six entry points
+
+| | Entry | What it is |
+|---|---|---|
+| 📖 | **[Overview](docs/en/index.md)** | What Tieban Shenshu is, how it differs from BaZi, what is known vs unknown |
+| 🔤 | **[Glossary](docs/en/glossary.md)** | *Kaoke*, *dingfen*, *tiaowen*, *taixuan* — each labelled by **evidence level** |
+| 🛠 | **[Educational tools](demo/README.md)** | Zero-dependency Python, 6 commands, runs locally, uploads nothing |
+| 📚 | **[History & debates](docs/en/history.md)** | Timeline, Yang Shen's criticism, open questions |
+| 🔬 | **[Research methods](docs/en/research-methods.md)** | How we judge, how we cite, how to evaluate our credibility |
+| 🌍 | **[Public project survey](research/README.md)** | Licence analysis of 19 related GitHub projects (reproducible) |
+
+<p align="center">
+  <a href="https://tiebanshenshuapp.com"><strong>Official website</strong></a> ｜
+  <a href="https://tiebanshenshuapp.com/trial"><strong>Free trial</strong></a> ｜
+  <a href="CONTRIBUTING.md">Contributing</a> ｜
+  <a href="docs/en/faq.md">FAQ</a>
+</p>
 
 ---
 
@@ -144,6 +174,25 @@ A: https://tiebanshenshuapp.com is the sole official entry point for the full co
 A: The tool performs only **publicly verifiable deterministic computation** (sexagenary conversion, index lookup, format checking). It does not implement the private derivation chain and produces no personal readings.
 
 More in the [FAQ](docs/en/faq.md).
+
+---
+
+## Version and status
+
+| Item | Value |
+|---|---|
+| Community edition | **v0.1.0** (independent numbering, unrelated to the commercial product) |
+| Documentation | 24 documents (6 each: zh-Hans / zh-HK / zh-TW / en) |
+| Educational tool | 6 commands, zero external dependencies |
+| Tests | 26, all passing |
+| CI | 5 checks (tests / safety / markdown / docs / links) |
+| Public verse excerpts | **0** (not published until the base edition and rights are verified) |
+| Changes | see [CHANGELOG.md](CHANGELOG.md) |
+| Plans | see [ROADMAP.md](ROADMAP.md) |
+
+> **Honest note**: this repository currently has **no verified traffic data**.
+> We do not buy stars, traffic, or reviews. Any view or indexing figure is marked
+> "unknown" until a verifiable source exists.
 
 ---
 

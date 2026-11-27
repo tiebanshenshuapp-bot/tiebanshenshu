@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-label="铁板神数软件 Tieban Shenshu Community Edition">
+  <title>铁板神数软件 · Tieban Shenshu Community Edition</title>
+  <defs>
+    <linearGradient id="sp-paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FCF9F2"/>
+      <stop offset="50%" stop-color="#F5EFE1"/>
+      <stop offset="100%" stop-color="#EBE2CF"/>
+    </linearGradient>
+    <pattern id="sp-fibre" width="9" height="9" patternUnits="userSpaceOnUse">
+      <path d="M0 9 L9 0" stroke="#000" stroke-opacity="0.014" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="sp-gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A8894E"/>
+      <stop offset="50%" stop-color="#CFAE68"/>
+      <stop offset="100%" stop-color="#A8894E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#sp-paper)"/>
+  <rect width="1280" height="640" fill="url(#sp-fibre)"/>
+
+  <!-- 宋版外框 -->
+  <rect x="34" y="34" width="1212" height="572" fill="none" stroke="#1B1B1B" stroke-width="4"/>
+  <rect x="48" y="48" width="1184" height="544" fill="none" stroke="#1B1B1B" stroke-opacity="0.35" stroke-width="1"/>
+  <rect x="72" y="72" width="1136" height="496" fill="none" stroke="url(#sp-gold)" stroke-width="1.4" stroke-opacity="0.8"/>
+
+  <!-- 版心竖线 -->
+  <line x1="330" y1="96" x2="330" y2="544" stroke="#1B1B1B" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="352" y1="96" x2="352" y2="544" stroke="#1B1B1B" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- 左：竖排品牌 -->
+  <g font-family="'Songti SC','SimSun','Noto Serif SC','Source Han Serif SC',serif" fill="#8C2B22" text-anchor="middle">
+    <text x="198" y="182" font-size="46" letter-spacing="4">铁板</text>
+    <text x="198" y="248" font-size="46" letter-spacing="4">神数</text>
+    <text x="198" y="314" font-size="46" letter-spacing="4">软件</text>
+  </g>
+  <text x="198" y="392" font-family="'Songti SC','SimSun',serif" font-size="18" fill="#5B5B5B" text-anchor="middle" letter-spacing="2">公開學術版</text>
+
+  <!-- 主标题 -->
+  <text x="410" y="192" font-family="'Songti SC','SimSun','Noto Serif SC','Source Han Serif SC',serif"
+        font-size="88" font-weight="700" fill="#141414" letter-spacing="6">铁板神数软件</text>
+
+  <!-- 英文 -->
+  <text x="414" y="256" font-family="Georgia,'Times New Roman',serif"
+        font-size="27" fill="#A8894E" letter-spacing="10">TIEBAN SHENSHU</text>
+
+  <line x1="414" y1="290" x2="900" y2="290" stroke="url(#sp-gold)" stroke-width="2"/>
+
+  <!-- 说明 -->
+  <text x="414" y="336" font-family="'Songti SC','PingFang SC','Microsoft YaHei',sans-serif"
+        font-size="23" fill="#333" letter-spacing="1.6">传统文化研究 · 文献索引 · 可运行教学工具</text>
+  <text x="414" y="372" font-family="'Helvetica Neue',Arial,sans-serif"
+        font-size="16" fill="#6B6B6B" letter-spacing="2.2">COMMUNITY RESEARCH &amp; EDUCATIONAL DEMOS</text>
+
+  <!-- 四语标识 -->
+  <g font-family="'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#8A8A8A" letter-spacing="1.2">
+    <text x="414" y="430">简体中文</text>
+    <text x="500" y="430" fill="#C0B9AA">·</text>
+    <text x="520" y="430">繁體中文 (HK)</text>
+    <text x="650" y="430" fill="#C0B9AA">·</text>
+    <text x="670" y="430">正體中文 (TW)</text>
+    <text x="800" y="430" fill="#C0B9AA">·</text>
+    <text x="820" y="430">English</text>
+  </g>
+
+  <!-- 官网 -->
+  <text x="414" y="486" font-family="'Helvetica Neue',Arial,sans-serif"
+        font-size="17" fill="#9D2933" letter-spacing="1.4">tiebanshenshuapp.com</text>
+
+  <!-- 左上角页码式装饰 -->
+  <text x="96" y="118" font-family="Georgia,serif" font-size="12" fill="#B5AC98" letter-spacing="3">卷首 · VOL. I</text>
+
+  <!-- 印章 -->
+  <g transform="translate(1064,300)">
+    <rect x="0" y="0" width="128" height="128" rx="5" fill="#9D2933"/>
+    <rect x="8" y="8" width="112" height="112" rx="3" fill="none" stroke="#FCF9F2" stroke-opacity="0.6" stroke-width="2.5"/>
+    <text x="64" y="56" font-family="'Songti SC','SimSun',serif" font-size="40" fill="#FCF9F2"
+          text-anchor="middle" font-weight="700" letter-spacing="2">天命</text>
+    <text x="64" y="104" font-family="'Songti SC','SimSun',serif" font-size="40" fill="#FCF9F2"
+          text-anchor="middle" font-weight="700" letter-spacing="2">鐵板</text>
+  </g>
+
+  <!-- 右下角细注 -->
+  <text x="1128" y="470" font-family="Georgia,serif" font-size="12" fill="#9A9A9A"
+        text-anchor="middle" letter-spacing="2">EST. 2026</text>
+
+  <!-- 四角装饰 -->
+  <g stroke="#1B1B1B" stroke-width="3" fill="none" opacity="0.5">
+    <path d="M72 116 L72 72 L116 72"/>
+    <path d="M1164 72 L1208 72 L1208 116"/>
+    <path d="M1208 524 L1208 568 L1164 568"/>
+    <path d="M116 568 L72 568 L72 524"/>
+  </g>
+</svg>
