@@ -117,6 +117,7 @@ Every claim in this project carries one of these labels:
 | Get quick answers | [FAQ](faq.md) |
 | Get started fast | [Getting started](getting-started.md) |
 | 🧭 [How it is calculated](how-to-calculate.md) | Five steps: record → cast → calibrate → derive → compile |
+🔧 **[Online teaching tools](tools/index.html)** — ganzhi conversion, jiazi lookup, term search, simplified↔traditional, all client-side
 
 > 📌 **Translation status**: the overview and glossary are complete in this language.
 > Some advanced pages are still being prepared. We would rather label a page
