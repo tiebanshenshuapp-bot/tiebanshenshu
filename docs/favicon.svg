@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="铁板神数">
+  <rect width="64" height="64" rx="8" fill="#855c1e"/>
+  <rect x="5" y="5" width="54" height="54" rx="5" fill="none" stroke="#e8d9b8" stroke-width="1.5"/>
+  <text x="32" y="44" font-family="Songti SC, SimSun, serif" font-size="34"
+        font-weight="600" fill="#fdfaf2" text-anchor="middle">鐵</text>
+</svg>
