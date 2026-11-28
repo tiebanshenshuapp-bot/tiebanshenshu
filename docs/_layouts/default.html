@@ -28,6 +28,68 @@
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta name="twitter:card" content="summary">
+{%- comment -%}
+  结构化数据：只声明与页面可见内容一致的事实。
+  dateModified 使用构建时间（页面确实在此时重新生成），
+  datePublished 使用项目首次公开发布日。
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": {{ site.url | append: "/#organization" | jsonify }},
+      "name": "铁板神数软件 · Tieban Shenshu",
+      "url": "https://tiebanshenshuapp.com",
+      "sameAs": [
+        "https://github.com/tiebanshenshuapp-bot/tiebanshenshu",
+        {{ site.url | jsonify }}
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ site.url | append: "/#website" | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "inLanguage": {{ page.lang | default: site.lang | default: "zh-Hans" | jsonify }},
+      "publisher": { "@id": {{ site.url | append: "/#organization" | jsonify }} }
+    },
+    {
+      "@type": "Article",
+      "@id": {{ page.url | absolute_url | append: "#article" | jsonify }},
+      "headline": {{ page.title | default: site.title | jsonify }},
+      "description": {{ page.description | default: site.description | jsonify }},
+      "inLanguage": {{ page.lang | default: site.lang | default: "zh-Hans" | jsonify }},
+      "isPartOf": { "@id": {{ site.url | append: "/#website" | jsonify }} },
+      "publisher": { "@id": {{ site.url | append: "/#organization" | jsonify }} },
+      "mainEntityOfPage": { "@id": {{ page.url | absolute_url | jsonify }} },
+      "datePublished": "2026-11-27",
+      "dateModified": {{ site.time | date_to_xmlschema | jsonify }}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "知识库首页",
+          "item": {{ site.url | append: "/" | jsonify }}
+        }{%- assign rest_check = page.url | remove_first: "/zh-hans" | remove_first: "/zh-hk" | remove_first: "/zh-tw" | remove_first: "/en" -%}
+        {%- if rest_check != page.url -%},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | default: "文章" | jsonify }},
+          "item": {{ page.url | absolute_url | jsonify }}
+        }
+        {%- endif -%}
+      ]
+    }
+  ]
+}
+</script>
 {%- if page.lang %}
 <meta property="og:locale" content="{{ page.lang | replace: '-', '_' }}">
 {%- endif %}
