@@ -15,12 +15,12 @@
 {%- assign langtags = "zh-Hans,zh-Hant-HK,zh-Hant-TW,en" | split: "," -%}
 {%- assign rest = page.url | remove_first: "/zh-hans" | remove_first: "/zh-hk" | remove_first: "/zh-tw" | remove_first: "/en" -%}
 {%- if rest == page.url -%}
-<link rel="alternate" hreflang="x-default" href="{{ site.baseurl }}/">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/">
 {%- else -%}
 {%- for d in langdirs -%}
-<link rel="alternate" hreflang="{{ langtags[forloop.index0] }}" href="{{ site.baseurl }}/{{ d }}{{ rest }}">
+<link rel="alternate" hreflang="{{ langtags[forloop.index0] }}" href="{{ site.url }}{{ site.baseurl }}/{{ d }}{{ rest }}">
 {%- endfor -%}
-<link rel="alternate" hreflang="x-default" href="{{ site.baseurl }}/">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/">
 {%- endif -%}
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{ page.title | default: site.title }}">
