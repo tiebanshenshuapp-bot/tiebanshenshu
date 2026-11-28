@@ -67,6 +67,9 @@ jobs:
           python-version: "3.11"
       - name: 运行安全门禁
         run: python scripts/check_public_safety.py
+
+      - name: 安全门回归测试（验证检测能力未被削弱）
+        run: python tests/test_safety_gate.py
       - name: 检查大文件
         run: |
           find . -path ./.git -prune -o -type f -size +1M -print | tee /tmp/big.txt

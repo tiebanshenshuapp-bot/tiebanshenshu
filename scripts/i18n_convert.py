@@ -47,7 +47,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SIMP_ONLY = set(
     # 高频简体专用字（简繁不同形）
     "说这为个过实验证据历问题对错试让别认记忆择选传语读页链结杂乱关见现发门华进还变动调"
-    "够论谁给当从击标复测确犹财骗钱费买卖赚该应须争议异体种类样级层简双边间时后总统计划规则来里边"
+    "够论谁给当从击标复测确犹财骗钱费买卖赚该应须争议异体种类样级层简双边间时总统计划规则"
     "们会诉两没学评释"
     # 注意：不要包含简繁同形字（如 告/科/解/值/整/告/究/方/法/内/容），否则会误报
 )
@@ -96,8 +96,13 @@ def convert_front_matter(fm, cc, lang):
 
 def convert_one(src_path, write=True, check_only=False):
     rel = os.path.relpath(src_path, ROOT)
-    text = io.open(src_path, encoding="utf-8").read()
+    text = io.open(src_path, encoding="utf-8-sig").read()
     fm, body = split_front_matter(text)
+
+    # 只接受 docs/zh-hans 下的文件 —— 否则传 docs/en/index.md 会把英文写进 zh-hk/zh-tw
+    SRC_DIR = os.path.join(ROOT, "docs", "zh-hans")
+    if os.path.abspath(os.path.dirname(src_path)) != os.path.abspath(SRC_DIR):
+        raise ValueError(f"只能转换 docs/zh-hans 下的文件，收到：{src_path}")
 
     name = os.path.basename(src_path)
     results = []
@@ -105,12 +110,10 @@ def convert_one(src_path, write=True, check_only=False):
     for target_dir in ("zh-hk", "zh-tw"):
         dst = os.path.join(ROOT, "docs", target_dir, name)
 
-        # 不覆盖人工译稿
-        if os.path.exists(dst):
-            existing = io.open(dst, encoding="utf-8").read()
-            if "manual: true" in existing:
-                results.append((target_dir, "SKIP (人工译稿)"))
-                continue
+        # 默认不覆盖任何已存在文件（人工译稿、地区用词修正都可能被冲掉）
+        if os.path.exists(dst) and not os.environ.get("I18N_FORCE"):
+            results.append((target_dir, "SKIP (已存在，需 I18N_FORCE=1 才覆盖)"))
+            continue
 
         conv = "s2hk" if target_dir == "zh-hk" else "s2twp"
         cc = OpenCC(conv)
@@ -121,7 +124,7 @@ def convert_one(src_path, write=True, check_only=False):
         for a, b in REGION_FIX.get(target_dir, []):
             new_body = new_body.replace(a, b)
 
-        out_text = "---\n" + new_fm + "\n---\n" + new_body
+        out_text = ("---\n" + new_fm + "\n---\n" + new_body) if fm else new_body
 
         # 残留简体检查
         found = sorted({c for c in new_body if c in SIMP_ONLY})
@@ -145,6 +148,9 @@ def main(argv=None):
 
     if args.all:
         d = os.path.join(ROOT, "docs", "zh-hans")
+        if not os.path.isdir(d):
+            print(f"错误：目录不存在 {d}", file=sys.stderr)
+            return 2
         files = [os.path.join(d, f) for f in sorted(os.listdir(d)) if f.endswith(".md")]
     elif args.files:
         files = [os.path.abspath(f) for f in args.files]
@@ -157,11 +163,22 @@ def main(argv=None):
         return 1
 
     total_bad = 0
+    skipped = 0
     for f in files:
         if not os.path.exists(f):
             print(f"跳过（不存在）: {f}")
+            skipped += 1
             continue
-        rel, results = convert_one(f, write=not args.check, check_only=args.check)
+        try:
+            rel, results = convert_one(f, write=not args.check, check_only=args.check)
+        except ValueError as e:
+            print(f"跳过：{e}", file=sys.stderr)
+            skipped += 1
+            continue
+        except (OSError, UnicodeDecodeError) as e:
+            print(f"跳过（读取失败）{f}: {e}", file=sys.stderr)
+            skipped += 1
+            continue
         print(f"\n{rel}")
         for target, status in results:
             mark = "❌" if status.startswith("残留简体") else "✓"

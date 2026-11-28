@@ -140,8 +140,9 @@
   }
 
   function checkVerseNumber(num, lo, hi) {
-    lo = lo || 1001;
-    hi = hi || 13000;
+    /* 用 == null 判定：lo = lo || 1001 会把合法的 lo=0 错误替换成 1001 */
+    if (lo == null) { lo = 1001; }
+    if (hi == null) { hi = 13000; }
     num = Number(num);
     if (!Number.isInteger(num)) {
       throw new Error("请输入整数编号");
@@ -171,7 +172,7 @@
       throw new Error("请输入书名");
     }
     for (var k in CITE_TEMPLATES) {
-      if (CITE_TEMPLATES.hasOwnProperty(k)) {
+      if (hasOwn(CITE_TEMPLATES, k)) {
         if (work.indexOf(k) >= 0 || k.indexOf(work) >= 0) {
           return CITE_TEMPLATES[k];
         }
@@ -183,13 +184,20 @@
       "提示：引用公版古籍时，务必注明你实际使用的版本，因为不同版本的条文文字存在差异。";
   }
 
+  /* 安全的自有属性判定：不用 GLOSSARY[name]，
+     否则 "constructor" / "__proto__" / "toString" 会命中 Object 原型，
+     渲染出 undefined 的释义（真实 bug）。 */
+  function hasOwn(obj, key) {
+    return Object.prototype.hasOwnProperty.call(obj, key);
+  }
+
   function findTerm(name) {
     name = String(name).trim();
-    if (GLOSSARY[name]) {
+    if (hasOwn(GLOSSARY, name)) {
       return { term: name, entry: GLOSSARY[name] };
     }
     for (var k in GLOSSARY) {
-      if (GLOSSARY.hasOwnProperty(k) && GLOSSARY[k].also) {
+      if (hasOwn(GLOSSARY, k) && GLOSSARY[k].also) {
         if (GLOSSARY[k].also.indexOf(name) >= 0) {
           return { term: k, alias: name, entry: GLOSSARY[k] };
         }
@@ -197,13 +205,13 @@
     }
     var suggestions = [];
     for (var t in GLOSSARY) {
-      if (GLOSSARY.hasOwnProperty(t) && t.indexOf(name) >= 0) {
+      if (hasOwn(GLOSSARY, t) && t.indexOf(name) >= 0) {
         suggestions.push(t);
       }
     }
     if (!suggestions.length) {
       for (var t2 in GLOSSARY) {
-        if (GLOSSARY.hasOwnProperty(t2)) { suggestions.push(t2); }
+        if (hasOwn(GLOSSARY, t2)) { suggestions.push(t2); }
       }
     }
     return { term: null, suggestions: suggestions };
@@ -439,7 +447,7 @@
   function doTermList() {
     var rows = [];
     for (var k in GLOSSARY) {
-      if (GLOSSARY.hasOwnProperty(k)) {
+      if (hasOwn(GLOSSARY, k)) {
         rows.push("【" + k + "】" + LEVEL_LABEL[GLOSSARY[k].level] + " — " + GLOSSARY[k].summary);
       }
     }
@@ -447,7 +455,12 @@
   }
 
   function doCheck() {
-    var n = Number($("verseInput").value);
+    var raw = $("verseInput").value;
+    if (!String(raw).trim()) {
+      setOut("verseOut", '<span class="err">请输入要校验的编号</span>');
+      return;
+    }
+    var n = Number(raw);
     try {
       var r = checkVerseNumber(n);
       if (r.ok) {
@@ -464,8 +477,13 @@
   }
 
   function doCite() {
+    var w = $("citeInput").value;
+    if (!String(w).trim()) {
+      setOut("citeOut", '<span class="err">请输入书名</span>');
+      return;
+    }
     try {
-      var t = cite($("citeInput").value);
+      var t = cite(w);
       setOut("citeOut", esc(t));
     } catch (e) {
       setOut("citeOut", '<span class="err">' + esc(e.message) + "</span>");
