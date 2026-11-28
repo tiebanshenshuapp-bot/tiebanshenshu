@@ -79,6 +79,8 @@ Yang Shen (楊慎, 1488–1559), in *Sheng'an ji* (《升庵集》):
 
 ## 4. Shao Yong and the *Huangji Jingshi*
 
+> Want the full treatment? See [What is Huangji Jingshi](huangji-jingshi.md).
+
 **Shao Yong** (邵雍, 1011–1077), styled Yaofu, posthumous name Kangjie. Northern Song
 cosmologist and Yijing scholar; one of the "Five Masters of Northern Song".
 

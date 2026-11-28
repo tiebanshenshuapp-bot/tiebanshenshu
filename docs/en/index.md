@@ -117,6 +117,7 @@ Every claim in this project carries one of these labels:
 | Get quick answers | [FAQ](faq.md) |
 | Is it accurate? | [Is it accurate? An honest analysis](accuracy.md) |
 | What is kaoke? | [Kaoke and dingfen explained](kaoke.md) |
+| What is Huangji Jingshi? | [Shao Yong's cycle system](huangji-jingshi.md) |
 | Get started fast | [Getting started](getting-started.md) |
 | 🧭 [How it is calculated](how-to-calculate.md) | Five steps: record → cast → calibrate → derive → compile |
 📚 **[What "12,000 clauses" means](tiaowen-12000.html)** — where the figure comes from, why editions differ, why numbers are not portable

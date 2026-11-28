@@ -115,6 +115,7 @@ layout: default
 | 🔧 線上教學工具 | [7 個工具，瀏覽器直接計](../tools/index.html)（唔使裝，唔上傳資料） |
 | 準唔準？ | [準唔準：一個誠實嘅分析](accuracy.md) |
 | 考刻係乜？ | [考刻定分詳解](kaoke.md) |
+| 皇極經世係乜？ | [邵雍元會運世詳解](huangji-jingshi.md) |
 | 快速上手 | [快速上手](getting-started.md) |
 
 > 📌 **翻譯進度**：本語言版本的入門總覽與術語表已完成。
