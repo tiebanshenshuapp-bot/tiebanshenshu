@@ -26,7 +26,8 @@
 |---|---|---|
 | 📖 | **[入門總覽](docs/zh-tw/index.md)** | 鐵板神數是什麼、與八字的區別、源流哪些清楚哪些不清楚 |
 | 🔤 | **[術語表](docs/zh-tw/glossary.md)** | 考刻 / 定分 / 條文 / 太玄數，每條標註**證據層級** |
-| 🛠 | **[教學工具](demo/README.md)** | 零依賴 Python 工具，6 個指令，本地執行不上傳資料 |
+| 🛠 | **[網頁教學工具](https://tiebanshenshuapp-bot.github.io/tiebanshenshu/tools/)** | **無需安裝**，瀏覽器直接算：干支 / 甲子 / 術語 / 編號校驗 / 引用 / 繁簡 / 干支關係 |
+| 💻 | **[命令列工具](demo/README.md)** | 零依賴 Python，7 個指令，可離線批次呼叫 |
 | 📚 | **[源流與爭議](docs/zh-tw/history.md)** | 時間線、楊慎的批評、哪些問題至今無解 |
 | 🔬 | **[研究方法](docs/zh-tw/research-methods.md)** | 我們的判斷標準、引用規範、如何評價我們的可信度 |
 | 🌍 | **[公開專案調查](research/README.md)** | 19 個 GitHub 相關專案的授權分析（可重現） |

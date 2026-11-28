@@ -26,7 +26,8 @@
 |---|---|---|
 | 📖 | **[入门总览](docs/zh-hans/index.md)** | 铁板神数是什么、与八字的区别、源流哪些清楚哪些不清楚 |
 | 🔤 | **[术语表](docs/zh-hans/glossary.md)** | 考刻 / 定分 / 条文 / 太玄数，每条标注**证据层级** |
-| 🛠 | **[教学工具](demo/README.md)** | 零依赖 Python 工具，6 个命令，本地运行不上传数据 |
+| 🛠 | **[网页教学工具](https://tiebanshenshuapp-bot.github.io/tiebanshenshu/tools/)** | **无需安装**，浏览器直接算：干支 / 甲子 / 术语 / 编号校验 / 引用 / 繁简 / 干支关系 |
+| 💻 | **[命令行工具](demo/README.md)** | 零依赖 Python，7 个命令，可离线批量调用 |
 | 📚 | **[源流与争议](docs/zh-hans/history.md)** | 时间线、杨慎的批评、哪些问题至今无解 |
 | 🔬 | **[研究方法](docs/zh-hans/research-methods.md)** | 我们的判断标准、引用规范、如何评价我们的可信度 |
 | 🌍 | **[公开项目调查](research/README.md)** | 19 个 GitHub 相关项目的许可分析（可复现） |

@@ -26,7 +26,8 @@
 |---|---|---|
 | 📖 | **[Overview](docs/en/index.md)** | What Tieban Shenshu is, how it differs from BaZi, what is known vs unknown |
 | 🔤 | **[Glossary](docs/en/glossary.md)** | *Kaoke*, *dingfen*, *tiaowen*, *taixuan* — each labelled by **evidence level** |
-| 🛠 | **[Educational tools](demo/README.md)** | Zero-dependency Python, 6 commands, runs locally, uploads nothing |
+| 🛠 | **[Web tools](https://tiebanshenshuapp-bot.github.io/tiebanshenshu/tools/)** | **No installation** — runs in your browser: ganzhi / 60-cycle / terms / ID check / citation / script diff / relations |
+| 💻 | **[CLI tools](demo/README.md)** | Zero-dependency Python, 7 commands, scriptable offline |
 | 📚 | **[History & debates](docs/en/history.md)** | Timeline, Yang Shen's criticism, open questions |
 | 🔬 | **[Research methods](docs/en/research-methods.md)** | How we judge, how we cite, how to evaluate our credibility |
 | 🌍 | **[Public project survey](research/README.md)** | Licence analysis of 19 related GitHub projects (reproducible) |

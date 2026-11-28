@@ -1,0 +1,172 @@
+---
+title: "在线教学工具 · 干支 / 甲子 / 术语 / 编号校验 | Tieban Shenshu Tools"
+description: "铁板神数在线教学工具：公历转干支、六十甲子查询、传统术语查询、条文编号格式校验、文献引用生成、繁简对照。全部在浏览器本地运行，不上传任何数据，不需要安装。"
+lang: zh-Hans
+layout: default
+permalink: /tools/
+---
+<link rel="stylesheet" href="{{ site.baseurl }}/tools/tools.css">
+<script defer src="{{ site.baseurl }}/tools/tools.js"></script>
+
+<h1>在线教学工具</h1>
+
+<blockquote>
+  <strong>全部在您的浏览器本地运行。</strong>不需要安装、不需要注册、不上传任何数据、不询问真实姓名或生辰。
+  计算结果仅供参考与学习，<strong>不构成任何命运预测依据</strong>。
+</blockquote>
+
+<nav class="tool-nav">
+  <a href="#t1">① 公历年 → 干支</a>
+  <a href="#t2">② 六十甲子</a>
+  <a href="#t3">③ 术语查询</a>
+  <a href="#t4">④ 编号格式校验</a>
+  <a href="#t5">⑤ 文献引用</a>
+  <a href="#t6">⑥ 繁简对照</a>
+  <a href="#t7">⑦ 干支关系</a>
+</nav>
+
+<!-- ① 公历年 → 干支 -->
+<section class="tool" id="t1">
+  <h2>① 公历年 → 干支</h2>
+  <p class="hint">按公元 4 年为甲子年的通用算法换算。</p>
+  <div class="row">
+    <label>公历年 <input type="number" id="yearInput" value="1984" min="1" max="9999"></label>
+    <button type="button" data-act="ganzhi">换算</button>
+  </div>
+  <div class="out" id="yearOut" aria-live="polite"></div>
+  <p class="warn">
+    ⚠️ 命理上排年柱应以<strong>立春</strong>为界。例如 1984 年 1 月出生者，命理年柱仍属 1983 年（癸亥）。
+    本工具按公历年份直接换算，请自行注意此边界。
+  </p>
+</section>
+
+<!-- ② 六十甲子 -->
+<section class="tool" id="t2">
+  <h2>② 六十甲子查询</h2>
+  <div class="row">
+    <label>输入干支 <input type="text" id="jiaziInput" value="甲子" maxlength="4" placeholder="如 甲子"></label>
+    <button type="button" data-act="jiazi">查序号</button>
+  </div>
+  <div class="row">
+    <label>输入序号 <input type="number" id="indexInput" value="1" min="1" max="60"></label>
+    <button type="button" data-act="at">查干支</button>
+  </div>
+  <div class="out" id="jiaziOut" aria-live="polite"></div>
+  <details>
+    <summary>查看完整六十甲子表</summary>
+    <div id="jiaziTable" class="grid60"></div>
+  </details>
+</section>
+
+<!-- ③ 术语查询 -->
+<section class="tool" id="t3">
+  <h2>③ 传统术语查询</h2>
+  <p class="hint">每条标注<strong>证据层级</strong>：古籍原文 / 传统说法 / 学术讨论 / 编者观点。</p>
+  <div class="row">
+    <label>术语 <input type="text" id="termInput" value="考刻" placeholder="如 考刻、定分、条文"></label>
+    <button type="button" data-act="term">查询</button>
+    <button type="button" data-act="termList" class="ghost">列出全部</button>
+  </div>
+  <div class="out" id="termOut" aria-live="polite"></div>
+</section>
+
+<!-- ④ 编号格式校验 -->
+<section class="tool" id="t4">
+  <h2>④ 条文编号格式校验</h2>
+  <p class="hint">只校验<strong>编号格式</strong>（是否落在公开讨论的区间内），<strong>不返回任何条文内容</strong>。</p>
+  <div class="row">
+    <label>编号 <input type="number" id="verseInput" value="4082"></label>
+    <button type="button" data-act="check">校验</button>
+  </div>
+  <div class="out" id="verseOut" aria-live="polite"></div>
+  <p class="warn">
+    默认区间 1001–13000 仅为<strong>演示参数</strong>，不代表任何特定抄本的权威映射。
+    不同传本的分集方式与编号范围存在差异。
+  </p>
+</section>
+
+<!-- ⑤ 文献引用 -->
+<section class="tool" id="t5">
+  <h2>⑤ 文献引用生成</h2>
+  <div class="row">
+    <label>书名 <input type="text" id="citeInput" value="皇极经世" placeholder="如 皇极经世"></label>
+    <button type="button" data-act="cite">生成</button>
+  </div>
+  <div class="out" id="citeOut" aria-live="polite"></div>
+  <p class="warn">
+    ⚠️ 引用公版古籍<strong>必须注明你实际使用的版本</strong>。不同版本条文文字互有出入。
+  </p>
+</section>
+
+<!-- ⑥ 繁简对照 -->
+<section class="tool" id="t6">
+  <h2>⑥ 繁简对照</h2>
+  <p class="hint">仅做逐字对照提示，<strong>不是</strong>完整转换引擎。正式转换请使用 OpenCC。</p>
+  <div class="row">
+    <label>文本 <textarea id="convInput" rows="3" placeholder="输入要对照的文字">铁板神数 考刻 定分 条文 太玄数</textarea></label>
+  </div>
+  <div class="row">
+    <button type="button" data-act="conv">对照</button>
+    <button type="button" data-act="convClear" class="ghost">清空</button>
+  </div>
+  <div class="out" id="convOut" aria-live="polite"></div>
+</section>
+
+<!-- ⑦ 干支关系 -->
+<section class="tool" id="t7">
+  <h2>⑦ 干支关系查询</h2>
+  <p class="hint">天干五合、地支六冲、六合、三合。支持输入完整干支（如「甲子」）或单字（天干/地支自动识别）。</p>
+  <div class="row">
+    <label>干支一 <input type="text" id="gz1" value="甲子" maxlength="2" placeholder="甲子 或 甲"></label>
+    <label>干支二 <input type="text" id="gz2" value="己丑" maxlength="2" placeholder="己丑 或 己"></label>
+    <button type="button" data-act="relation">查关系</button>
+  </div>
+  <div class="out" id="relOut" aria-live="polite"></div>
+</section>
+
+<hr>
+
+<h2>关于这些工具</h2>
+
+<table>
+  <thead>
+    <tr><th>工具</th><th>能做什么</th><th>不能做什么</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>① 年份干支</td><td>公历年 → 干支、五行</td><td>不判断立春分界</td></tr>
+    <tr><td>② 六十甲子</td><td>干支 ⇄ 序号双向查询</td><td>不推断吉凶</td></tr>
+    <tr><td>③ 术语查询</td><td>释义 + 证据层级 + 来源</td><td>不给个人命运结论</td></tr>
+    <tr><td>④ 编号校验</td><td>格式是否合法、集次位置</td><td><strong>不返回条文内容</strong></td></tr>
+    <tr><td>⑤ 引用生成</td><td>引用骨架 + 补全提醒</td><td>不替你查版本</td></tr>
+    <tr><td>⑥ 繁简对照</td><td>逐字差异提示</td><td>非完整转换引擎</td></tr>
+    <tr><td>⑦ 干支关系</td><td>五合 / 六冲 / 六合 / 三合</td><td>不论命局喜忌，不做完整合盘</td></tr>
+  </tbody>
+</table>
+
+<h2>命令行版本</h2>
+
+<p>同样功能的 Python 版本在 <a href="https://github.com/tiebanshenshuapp-bot/tiebanshenshu/tree/main/demo">demo/</a> 目录，零依赖，可离线运行：</p>
+
+<pre><code>git clone https://github.com/tiebanshenshuapp-bot/tiebanshenshu.git
+cd tiebanshenshu/demo
+python tieban_open_tools.py ganzhi 1984
+python tieban_open_tools.py jiazi 甲子
+python tieban_open_tools.py term 考刻</code></pre>
+
+<p class="hint">网页版与 Python 版使用<strong>同一套规则与数据</strong>，结果一致。</p>
+
+<h2>边界与免责</h2>
+
+<ul>
+  <li>本工具<strong>不实现</strong>商业考刻定分算法、取数链或命书生成。</li>
+  <li>本工具<strong>不含</strong>完整条文库，编号校验仅做格式判断。</li>
+  <li>本工具<strong>不上传</strong>任何数据，全部在浏览器本地计算。</li>
+  <li>本工具为传统文化研究与教学用途，<strong>不构成任何命运预测依据</strong>。</li>
+  <li>请勿据以作出医疗、投资、法律或人生重大决定。</li>
+</ul>
+
+<p class="hint">
+  需要完整功能？请访问
+  <a href="https://tiebanshenshuapp.com">官方网站</a> 或
+  <a href="https://tiebanshenshuapp.com/trial">免费试算</a>。
+</p>

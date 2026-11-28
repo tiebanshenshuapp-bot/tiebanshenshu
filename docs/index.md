@@ -23,6 +23,14 @@ layout: default
 
 ---
 
+## 在线教学工具 / Web Tools
+
+**无需安装，浏览器直接使用**：[教学工具中心 →](https://tiebanshenshuapp-bot.github.io/tiebanshenshu/tools/)
+
+涵盖：公历年→干支、六十甲子查询、传统术语查询、条文编号格式校验、文献引用生成、繁简对照、干支关系（五合/六冲/六合/三合）。
+
+---
+
 ## 这是什么
 
 **铁板神数**（又作铁版神数、鐵板神數，英文 Tieban Shenshu）是一套中国传统术数体系。三个核心特征：

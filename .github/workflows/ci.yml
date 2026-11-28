@@ -38,6 +38,23 @@ jobs:
           python tieban_open_tools.py jiazi 甲子
           python tieban_open_tools.py --json ganzhi 2026
 
+  parity:
+    name: JS-Python 一致性
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: 设置 Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.11"
+      - name: 设置 Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: "20"
+      - name: 网页版与命令行版结果一致性
+        run: python tests/test_js_python_parity.py
+
   safety:
     name: 公开发布安全门
     runs-on: ubuntu-latest
