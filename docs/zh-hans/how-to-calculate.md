@@ -85,6 +85,8 @@ layout: default
 
 ---
 
+
+> 拿到命书后怎么看？见 [命书怎么看](reading-a-report.md)。
 ## 三、哪些环节不能省
 
 | 环节 | 省掉的后果 |

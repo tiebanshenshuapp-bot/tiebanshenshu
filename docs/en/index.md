@@ -121,6 +121,7 @@ Every claim in this project carries one of these labels:
 | What is kaoke? | [Kaoke and dingfen explained](kaoke.md) |
 | What is Huangji Jingshi? | [Shao Yong's cycle system](huangji-jingshi.md) |
 | How does it differ from BaZi/Zi Wei? | [Three systems compared](comparison.md) |
+| How do I read a report? | [Section-by-section guide](reading-a-report.md) |
 | Get started fast | [Getting started](getting-started.md) |
 | 🧭 [How it is calculated](how-to-calculate.md) | Five steps: record → cast → calibrate → derive → compile |
 📚 **[What "12,000 clauses" means](tiaowen-12000.html)** — where the figure comes from, why editions differ, why numbers are not portable

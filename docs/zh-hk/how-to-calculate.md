@@ -85,6 +85,8 @@ layout: default
 
 ---
 
+
+> 拿到命書後點睇？見 [命書點睇](reading-a-report.md)。
 ## 三、哪些環節不能省
 
 | 環節 | 省掉的後果 |

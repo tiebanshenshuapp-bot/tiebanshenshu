@@ -85,6 +85,8 @@ If facts are insufficient, candidates cannot converge and one should not force a
 
 ---
 
+
+> Got a reading? See [How to read a report](reading-a-report.md).
 ## What cannot be skipped
 
 | Step | Consequence of skipping |
