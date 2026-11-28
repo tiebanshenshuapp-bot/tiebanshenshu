@@ -117,6 +117,7 @@ layout: default
 | 了解源流争议 | [history.md](history.md) |
 | 了解研究方法 | [research-methods.md](research-methods.md) |
 | 常见疑问 | [faq.md](faq.md) |
+| 🧭 | **[铁板神数怎么算](how-to-calculate.md)** | 立档→考刻→定分→取条→成书，五步完整流程；含真太阳时与排盘要点 |
 
 ---
 
