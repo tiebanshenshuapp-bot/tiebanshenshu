@@ -7,6 +7,8 @@ layout: default
 
 # FAQ
 
+> For the full analysis, see [Is it accurate?](accuracy.md).
+
 ## About this project
 
 ### Q1: Is this repository official? How does it relate to the website?

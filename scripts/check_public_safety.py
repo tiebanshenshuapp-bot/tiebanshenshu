@@ -84,7 +84,8 @@ PII_PATTERNS = [
 
 MAX_FILE_SIZE = 1024 * 1024  # 1 MB
 
-SKIP_DIRS = {".git", "__pycache__", "node_modules", ".venv", "venv", ".pytest_cache"}
+SKIP_DIRS = {".git", "__pycache__", "node_modules", ".venv", "venv",
+             ".pytest_cache", "dist", "_preview", "_site"}
 TEXT_EXT = {
     ".md", ".txt", ".py", ".yml", ".yaml", ".json", ".cff", ".toml",
     ".cfg", ".ini", ".html", ".css", ".js", ".ts", ".sh", "",

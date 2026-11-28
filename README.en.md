@@ -6,6 +6,14 @@
 <p align="center"><strong>Tieban Shenshu Community Edition</strong></p>
 
 <p align="center">
+  <a href="https://github.com/tiebanshenshuapp-bot/tiebanshenshu/releases"><img src="https://img.shields.io/github/v/release/tiebanshenshuapp-bot/tiebanshenshu?label=release&color=855c1e" alt="Release"></a>
+  <a href="https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-PolyForm%20NC%201.0.0-9d2933" alt="License"></a>
+  <a href="https://github.com/tiebanshenshuapp-bot/tiebanshenshu/actions"><img src="https://img.shields.io/github/actions/workflow/status/tiebanshenshuapp-bot/tiebanshenshu/ci.yml?label=CI" alt="CI"></a>
+  <a href="https://tiebanshenshuapp-bot.github.io/tiebanshenshu/tools/"><img src="https://img.shields.io/badge/web%20tools-7-2f6b3a" alt="Web tools"></a>
+  <a href="https://github.com/tiebanshenshuapp-bot/tiebanshenshu/stargazers"><img src="https://img.shields.io/github/stars/tiebanshenshuapp-bot/tiebanshenshu?style=social" alt="Stars"></a>
+</p>
+
+<p align="center">
   <a href="README.md">简体中文</a> ｜
   <a href="README.zh-HK.md">繁體中文 (HK/MO)</a> ｜
   <a href="README.zh-TW.md">正體中文 (TW)</a> ｜

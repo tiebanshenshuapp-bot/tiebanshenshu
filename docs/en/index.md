@@ -115,10 +115,11 @@ Every claim in this project carries one of these labels:
 | Read about the origins debate | [History](history.md) |
 | Understand our methodology | [Research methods](research-methods.md) |
 | Get quick answers | [FAQ](faq.md) |
+| Is it accurate? | [Is it accurate? An honest analysis](accuracy.md) |
 | Get started fast | [Getting started](getting-started.md) |
 | 🧭 [How it is calculated](how-to-calculate.md) | Five steps: record → cast → calibrate → derive → compile |
 📚 **[What "12,000 clauses" means](tiaowen-12000.html)** — where the figure comes from, why editions differ, why numbers are not portable
-🔧 **[Online teaching tools](tools/index.html)** — ganzhi conversion, jiazi lookup, term search, simplified↔traditional, all client-side
+🔧 **[Online teaching tools](../tools/index.html)** — ganzhi conversion, jiazi lookup, term search, simplified↔traditional, all client-side
 
 > 📌 **Translation status**: the overview and glossary are complete in this language.
 > Some advanced pages are still being prepared. We would rather label a page

@@ -112,6 +112,8 @@ layout: default
 | 了解源流爭議 | [源流與爭議](history.md) |
 | 了解研究方法 | [研究方法](research-methods.md) |
 | 常見疑問 | [常見問題](faq.md) |
+| 🔧 線上教學工具 | [7 個工具，瀏覽器直接計](../tools/index.html)（唔使裝，唔上傳資料） |
+| 準唔準？ | [準唔準：一個誠實嘅分析](accuracy.md) |
 | 快速上手 | [快速上手](getting-started.md) |
 
 > 📌 **翻譯進度**：本語言版本的入門總覽與術語表已完成。
