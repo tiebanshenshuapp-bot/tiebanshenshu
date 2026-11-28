@@ -123,7 +123,7 @@ python -m unittest discover -s tests -v
 
 最易做的三種貢獻：**報告錯誤**、**改進翻譯**（尤其香港／台灣用語差異）、**補充文獻出處**。
 
-先讀 **[貢獻指南](../../CONTRIBUTING.md)**。
+先讀 **[貢獻指南](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/CONTRIBUTING.md)**。
 
 **不要提交**：真實生辰、姓名、命書、來源不明的條文全文、
 從禁止商用項目複製的內容、算命廣告。
@@ -179,8 +179,8 @@ $env:PYTHONIOENCODING="utf-8"
 | 深入術語 | [術語表](glossary.md) |
 | 了解源流 | [源流與爭議](history.md) |
 | 了解我們的方法論 | [研究方法](research-methods.md) |
-| 參與建設 | [貢獻指南](../../CONTRIBUTING.md) |
-| 看計劃 | [路線圖](../../ROADMAP.md) |
+| 參與建設 | [貢獻指南](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/CONTRIBUTING.md) |
+| 看計劃 | [路線圖](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/ROADMAP.md) |
 
 ---
 

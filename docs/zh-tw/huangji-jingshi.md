@@ -97,7 +97,7 @@ layout: default
 | 輸出形態 | 卦象推移、歷史分期 | 編號條文 |
 | 目的 | 解釋歷史節律 | 描述個人境遇 |
 
-**尺度差了六個數量級，目的也完全不同。**
+**尺度差了約十個數量級**（1 元 = 129,600 年，而刻分以分鐘計），**目的也完全不同。**
 
 把它們當成一個東西，是根本性的誤解。
 
@@ -174,7 +174,7 @@ layout: default
 - `kentang2017/kinwangji`（16★）—— 無許可，法律上不可用
 - `jiaguoxinzhi/HuangjiJingshi` —— GPL-3.0，傳染性
 
-> 詳細調研見 [皇極經世與鐵版神數的開源實現](../../research/huangji-jingshi-opensource.md)。
+> 詳細調研見 [皇極經世與鐵版神數的開源實現](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/research/huangji-jingshi-opensource.md)。
 
 ---
 
@@ -195,7 +195,7 @@ layout: default
 | 術語 | [術語索引](glossary.md) |
 | 準不準 | [一個誠實的分析](accuracy.md) |
 | 考刻定分 | [考刻定分詳解](kaoke.md) |
-| 開源實現調研 | [皇極經世開源調研](../../research/huangji-jingshi-opensource.md) |
+| 開源實現調研 | [皇極經世開源調研](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/research/huangji-jingshi-opensource.md) |
 
 ---
 

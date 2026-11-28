@@ -141,7 +141,7 @@ Easiest three contributions:
 | Improve translation | Especially regional usage (Hong Kong / Taiwan) |
 | Add bibliographic detail | Title + edition + page |
 
-Read [**CONTRIBUTING.md**](../../CONTRIBUTING.md) first (10 minutes, prevents wasted work).
+Read [**CONTRIBUTING.md**](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/CONTRIBUTING.md) first (10 minutes, prevents wasted work).
 
 **Do not submit**: real birth data, personal names, reading reports, unattributed verse texts,
 or content copied from non-commercial-licensed projects.
@@ -191,8 +191,8 @@ we state the boundary.
 | Full terminology | [Glossary](glossary.md) |
 | Origins and debates | [History](history.md) |
 | Our methodology | [Research methods](research-methods.md) |
-| Contribute | [CONTRIBUTING.md](../../CONTRIBUTING.md) |
-| Plans | [ROADMAP.md](../../ROADMAP.md) |
+| Contribute | [CONTRIBUTING.md](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/CONTRIBUTING.md) |
+| Plans | [ROADMAP.md](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/ROADMAP.md) |
 
 ---
 

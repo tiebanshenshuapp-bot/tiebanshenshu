@@ -37,7 +37,7 @@ Formats differ by system and practitioner, but usually include:
 | **② Four pillars** | Year/month/day/hour stems and branches | The foundation of everything |
 | **③ Hidden stems** | Stems hidden inside each branch | Extra information not visible on the surface |
 | **④ Ten Gods** | Relations to the day master | Used for relatives and temperament |
-| **⑤ Hexagram** | Derived from the four pillars | A step specific to Tieban Shenshu |
+| **⑤ Hexagram** | Derived from the four pillars | Tieban Shenshu derives further numbers here to index verses |
 | **⑥ Categorised verses** | Verses grouped by theme | **The core content** |
 | **⑦ Luck cycles** (some) | Year-by-year inferences | The time dimension |
 

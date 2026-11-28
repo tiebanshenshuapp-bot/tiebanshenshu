@@ -113,7 +113,7 @@ Every claim in this project carries one of these labels:
 | You want to… | Go to |
 |---|---|
 | Understand the terminology | [Glossary](glossary.md) |
-| Try something hands-on | [../../demo/README.md](../../demo/README.md) |
+| Try something hands-on | [../../demo/README.md](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/demo/README.md) |
 | Read about the origins debate | [History](history.md) |
 | Understand our methodology | [Research methods](research-methods.md) |
 | Get quick answers | [FAQ](faq.md) |

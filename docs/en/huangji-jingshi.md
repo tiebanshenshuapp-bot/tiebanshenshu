@@ -100,7 +100,7 @@ Tieban Shenshu is traditionally called "皇極經世鐵版神數," and its namin
 | Output form | Hexagram transitions, historical periods | Numbered verses |
 | Purpose | Explain historical rhythm | Describe individual circumstances |
 
-**The scales differ by six orders of magnitude, and the purposes are entirely different.**
+**The scales differ by roughly ten orders of magnitude** (1 yuan = 129,600 years, while ke/fen are measured in minutes), **and the purposes are entirely different.**
 
 Treating them as one thing is a fundamental category error.
 
@@ -180,7 +180,7 @@ If you want to **implement** Huangji Jingshi computations in code, here is our s
 - `kentang2017/kinwangji` (16★) — no licence, legally unusable
 - `jiaguoxinzhi/HuangjiJingshi` — GPL-3.0, copyleft
 
-> Full survey: [Huangji Jingshi and Tieban Shenshu open-source survey](../../research/huangji-jingshi-opensource.md).
+> Full survey: [Huangji Jingshi and Tieban Shenshu open-source survey](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/research/huangji-jingshi-opensource.md).
 
 ---
 
@@ -203,7 +203,7 @@ If you want to **implement** Huangji Jingshi computations in code, here is our s
 | Terminology | [Glossary](glossary.md) |
 | Accuracy | [An honest analysis](accuracy.md) |
 | Kaoke | [Kaoke and dingfen](kaoke.md) |
-| Open-source survey | [Huangji Jingshi survey](../../research/huangji-jingshi-opensource.md) |
+| Open-source survey | [Huangji Jingshi survey](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/research/huangji-jingshi-opensource.md) |
 
 ---
 

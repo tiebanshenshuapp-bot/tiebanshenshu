@@ -69,7 +69,7 @@ layout: default
 ### 不清楚的部分
 
 - 宋元时期是否已有此术？目前可考文献中没有确切描述。
-- 条文的最初编者是誰？不清楚。
+- 条文的最初编者是谁？不清楚。
 - 「一万二千条」这个数字从何时开始？不清楚。
 - 各抄本之间的谱系关系？不清楚。
 
@@ -115,7 +115,7 @@ layout: default
 | 你想做什么 | 去哪 |
 |---|---|
 | 搞懂术语 | [术语表](glossary.md) |
-| 动手玩一下 | [../demo/README.md](../../demo/README.md) |
+| 动手玩一下 | [../demo/README.md](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/demo/README.md) |
 | 了解源流争议 | [history.md](history.md) |
 | 了解研究方法 | [research-methods.md](research-methods.md) |
 | 常见疑问 | [faq.md](faq.md) |

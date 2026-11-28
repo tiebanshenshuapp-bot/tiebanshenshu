@@ -35,6 +35,22 @@ MD_LINK = re.compile(r"\]\((?!https?://|#|mailto:)([^)#\s]+)(?:#[^)\s]*)?")
 EXT_LINK = re.compile(r"https?://[^\s\)\]\>" + chr(39) + chr(96) + "，。]+")
 
 
+# Jekyll 站点根 = docs/。跳出此根的相对链接不会被发布，必然 404。
+SITE_ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs")
+
+
+def outside_site(target, base_dir):
+    """目标是否落在站点根（docs/）之外 —— 这类链接在 GitHub Pages 上必然 404。"""
+    clean = target.strip().split("?")[0].split("#")[0]
+    if not clean or clean.startswith(("http://", "https://", "//", "mailto:")):
+        return False
+    resolved = os.path.normpath(os.path.join(base_dir, clean))
+    try:
+        return os.path.commonpath([os.path.abspath(resolved), os.path.abspath(SITE_ROOT)]) != os.path.abspath(SITE_ROOT)
+    except ValueError:
+        return True
+
+
 def resolve(base_dir, target):
     """判断相对链接目标是否存在（含 Jekyll .html -> .md 映射）。"""
     clean = target.strip().split("?")[0]
@@ -85,6 +101,14 @@ def check_relative(root):
             if not target:
                 continue
             total += 1
+            # 只对 docs/ 内的文件做"站点根"检查：
+            # 那些文件会被 Jekyll 发布到 Pages，跳出 docs/ 的相对链接必然 404。
+            # 仓库根/其他目录的 .md（README、CONTRIBUTING 等）只在 GitHub 页显示，
+            # 相对链接在 GitHub 上是有效的，不能误报。
+            in_site = os.path.abspath(dirpath).startswith(os.path.abspath(SITE_ROOT) + os.sep)
+            if in_site and outside_site(target, dirpath):
+                bad.append((rel_p, target + "  [在 docs/ 内但跳出站点根，发布后 404]"))
+                continue
             if not resolve(dirpath, target):
                 bad.append((rel_p, target))
     return total, bad

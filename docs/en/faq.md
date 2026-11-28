@@ -19,7 +19,7 @@ This is the **officially maintained public research community**. It is **not** t
 |---|---|---|
 | Nature | Public research and educational demos | Commercial service |
 | Content | Introductions, terminology, tools, bibliography | Full features, reading generation |
-| Verse corpus | A few attributed excerpts (≤30) | Complete |
+| Verse corpus | 0 excerpts (cap 30 reserved; none published until rights are verified) | Complete |
 | Algorithms | Basic public conversions only | Full private implementation |
 | Cost | Free | Per website policy |
 

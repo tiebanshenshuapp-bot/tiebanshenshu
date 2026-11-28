@@ -23,7 +23,7 @@ layout: default
 |---|---|---|
 | 性质 | 公开研究、教学演示 | 商业服务 |
 | 内容 | 入门知识、术语、工具、文献索引 | 完整功能、命书生成 |
-| 条文库 | 少量有来源的示例（≤30 条） | 完整 |
+| 条文库 | 0 条（预留 ≤30 条上限，权利核实前不发布） | 完整 |
 | 算法 | 仅公开基础换算 | 完整私有实现 |
 | 收费 | 完全免费 | 按官网政策 |
 
@@ -112,7 +112,7 @@ https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_cam
 2. **你能提供什么**：书目信息（书名、版本、藏地、页码）比"整本扫描上传"更有价值
 3. **不要上传整本**：请提供**索引性信息**，我们再判断是否需要具体内容
 
-详见 [CONTRIBUTING.md](../../CONTRIBUTING.md)。
+详见 [CONTRIBUTING.md](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/CONTRIBUTING.md)。
 
 ---
 
@@ -247,7 +247,7 @@ https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_cam
 - ❌ 发布算命广告
 - ❌ 编造古籍出处
 
-详见 [CONTRIBUTING.md](../../CONTRIBUTING.md)。
+详见 [CONTRIBUTING.md](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/CONTRIBUTING.md)。
 
 ---
 

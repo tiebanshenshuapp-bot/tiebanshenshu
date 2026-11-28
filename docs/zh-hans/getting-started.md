@@ -167,7 +167,7 @@ python -m unittest discover -s tests -v
 
 ### 先读这个
 
-**[贡献指南](../../CONTRIBUTING.md)** —— 10 分钟读完，避免白做。
+**[贡献指南](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/CONTRIBUTING.md)** —— 10 分钟读完，避免白做。
 
 ### 不要提交这些
 
@@ -237,8 +237,8 @@ $env:PYTHONIOENCODING="utf-8"
 | 深入术语 | [术语表](glossary.md) |
 | 了解源流 | [源流与争议](history.md) |
 | 了解我们的方法论 | [研究方法](research-methods.md) |
-| 参与建设 | [贡献指南](../../CONTRIBUTING.md) |
-| 看计划 | [路线图](../../ROADMAP.md) |
+| 参与建设 | [贡献指南](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/CONTRIBUTING.md) |
+| 看计划 | [路线图](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/ROADMAP.md) |
 
 ---
 

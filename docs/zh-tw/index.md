@@ -107,7 +107,7 @@ layout: default
 | 你想做什麼 | 去哪 |
 |---|---|
 | 搞懂術語 | [術語表](glossary.md) |
-| 動手玩一下 | [../../demo/README.md](../../demo/README.md) |
+| 動手玩一下 | [../../demo/README.md](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/blob/main/demo/README.md) |
 | 了解源流爭議 | [源流與爭議](history.md) |
 | 了解研究方法 | [研究方法](research-methods.md) |
 | 常見疑問 | [常見問題](faq.md) |
