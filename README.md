@@ -33,8 +33,8 @@
 | 🌍 | **[公开项目调查](research/README.md)** | 19 个 GitHub 相关项目的许可分析（可复现） |
 
 <p align="center">
-  <a href="https://tiebanshenshuapp.com"><strong>官方网站</strong></a> ｜
-  <a href="https://tiebanshenshuapp.com/trial"><strong>免费试算</strong></a> ｜
+  <a href="https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link"><strong>官方网站</strong></a> ｜
+  <a href="https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta"><strong>免费试算</strong></a> ｜
   <a href="CONTRIBUTING.md">参与贡献</a> ｜
   <a href="docs/zh-hans/faq.md">常见问题</a>
 </p>
@@ -68,8 +68,8 @@
 
 | 用途 | 地址 | 状态 |
 |---|---|---|
-| 官方网站 | https://tiebanshenshuapp.com | 已核验可访问 |
-| 免费试算 | https://tiebanshenshuapp.com/trial | 已核验为真实试算页 |
+| 官方网站 | https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link | 已核验可访问 |
+| 免费试算 | https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta | 已核验为真实试算页 |
 
 > 上述为**唯一正式入口**。本社区不提供商业软件下载，也不代表任何流派宣称正统。
 
@@ -167,7 +167,7 @@ A：没有。本仓库只收录**极少量**有来源标注的公开示例（累
 A：不能。本项目自有新增代码采用 **PolyForm Noncommercial 1.0.0**（源码公开、非商业使用），文档采用 **CC BY-NC 4.0**。详见下方许可证章节。注意这是 **Source Available**，不是 OSI 定义的开源许可。
 
 **Q：那和官网是什么关系？**
-A：官网 https://tiebanshenshuapp.com 是提供完整商业服务的唯一正式入口。本仓库是独立的知识与研究项目，不是商业完整版，也不是第二个算命网站。
+A：官网 https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link 是提供完整商业服务的唯一正式入口。本仓库是独立的知识与研究项目，不是商业完整版，也不是第二个算命网站。
 
 **Q：工具准不准？**
 A：工具只做**可公开核查的确定性计算**（干支换算、序数查询、格式校验）。它不实现私有取数链，不给出任何个人命运结论。
@@ -220,6 +220,6 @@ A：工具只做**可公开核查的确定性计算**（干支换算、序数查
 
 <div align="center">
 
-[官方网站](https://tiebanshenshuapp.com) ｜ [免费试算](https://tiebanshenshuapp.com/trial) ｜ [讨论区](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/discussions) ｜ [参与贡献](CONTRIBUTING.md) ｜ [安全问题](SECURITY.md)
+[官方网站](https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link) ｜ [免费试算](https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta) ｜ [讨论区](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/discussions) ｜ [参与贡献](CONTRIBUTING.md) ｜ [安全问题](SECURITY.md)
 
 </div>

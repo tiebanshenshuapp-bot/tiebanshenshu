@@ -132,4 +132,4 @@ layout: default
 
 ---
 
-> 官方入口：[官网](https://tiebanshenshuapp.com) ｜ [免费试算](https://tiebanshenshuapp.com/trial)
+> 官方入口：[官网](https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link) ｜ [免费试算](https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta)

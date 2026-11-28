@@ -157,7 +157,7 @@ This repository is a **research community**, not the commercial product.
 | Complete verse corpus | Official website |
 | Chart casting, kaoke | Official website |
 | Generated reading reports | Official website |
-| Free trial | https://tiebanshenshuapp.com/trial |
+| Free trial | https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta |
 
 Official website: **https://tiebanshenshuapp.com**
 

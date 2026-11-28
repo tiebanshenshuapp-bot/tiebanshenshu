@@ -33,8 +33,8 @@
 | 🌍 | **[公開項目調查](research/README.md)** | 19 個 GitHub 相關項目的許可分析（可重現） |
 
 <p align="center">
-  <a href="https://tiebanshenshuapp.com"><strong>官方網站</strong></a> ｜
-  <a href="https://tiebanshenshuapp.com/trial"><strong>免費試算</strong></a> ｜
+  <a href="https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link"><strong>官方網站</strong></a> ｜
+  <a href="https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta"><strong>免費試算</strong></a> ｜
   <a href="CONTRIBUTING.md">參與貢獻</a> ｜
   <a href="docs/zh-hk/faq.md">常見問題</a>
 </p>
@@ -68,8 +68,8 @@
 
 | 用途 | 地址 | 狀態 |
 |---|---|---|
-| 官方網站 | https://tiebanshenshuapp.com | 已核實可瀏覽 |
-| 免費試算 | https://tiebanshenshuapp.com/trial | 已核實為真實試算頁 |
+| 官方網站 | https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link | 已核實可瀏覽 |
+| 免費試算 | https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta | 已核實為真實試算頁 |
 
 > 上述為**唯一正式入口**。本社群不提供商業軟件下載，亦不代表任何流派宣稱正統。
 
@@ -171,7 +171,7 @@ A：沒有。本儲存庫只收錄**極少量**有來源標註的公開示例（
 A：不可以。本項目自有新增程式碼採用 **PolyForm Noncommercial 1.0.0**（原始碼公開、非商業使用），文件採用 **CC BY-NC 4.0**。請注意這是 **Source Available**，不是 OSI 定義的開源許可。
 
 **Q：那和官網是甚麼關係？**
-A：官網 https://tiebanshenshuapp.com 是提供完整商業服務的唯一正式入口。本儲存庫是獨立的知識與研究項目，不是商業完整版，也不是第二個算命網站。
+A：官網 https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link 是提供完整商業服務的唯一正式入口。本儲存庫是獨立的知識與研究項目，不是商業完整版，也不是第二個算命網站。
 
 **Q：工具準不準？**
 A：工具只做**可公開核查的確定性計算**（干支換算、序號查詢、格式檢查）。它不實作私有取數鏈，不給出任何個人命運結論。
@@ -224,6 +224,6 @@ A：工具只做**可公開核查的確定性計算**（干支換算、序號查
 
 <div align="center">
 
-[官方網站](https://tiebanshenshuapp.com) ｜ [免費試算](https://tiebanshenshuapp.com/trial) ｜ [討論區](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/discussions) ｜ [參與貢獻](CONTRIBUTING.md) ｜ [安全問題](SECURITY.md)
+[官方網站](https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link) ｜ [免費試算](https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta) ｜ [討論區](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/discussions) ｜ [參與貢獻](CONTRIBUTING.md) ｜ [安全問題](SECURITY.md)
 
 </div>

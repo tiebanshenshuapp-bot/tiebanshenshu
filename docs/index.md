@@ -1,6 +1,6 @@
 ---
 title: "鐵板神數 · 公开研究知识库 | Tieban Shenshu Research"
-description: "铁板神数（Tieban Shenshu / 鐵板神數）公开研究资料：四语术语索引、历史源流、研究方法与可运行教学示例。非商业软件源码，官网 https://tiebanshenshuapp.com"
+description: "铁板神数（Tieban Shenshu / 鐵板神數）公开研究资料：四语术语索引、历史源流、研究方法与可运行教学示例。非商业软件源码，官网 https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link"
 lang: zh-Hans
 layout: default
 ---
@@ -8,7 +8,7 @@ layout: default
 # 鐵板神數 · 公开研究知识库
 
 > Tieban Shenshu — public research notes, terminology index and runnable educational demos.
-> 本仓是**公开研究社区**资料，不是商业软件源码。官网：https://tiebanshenshuapp.com
+> 本仓是**公开研究社区**资料，不是商业软件源码。官网：https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link
 
 ---
 
@@ -58,9 +58,9 @@ layout: default
 
 ## 官方入口
 
-- 官网：https://tiebanshenshuapp.com
-- 免费试算：https://tiebanshenshuapp.com/trial
-- 条文查询：https://tiebanshenshuapp.com/tiaowen-chaxun/
-- 样卷：https://tiebanshenshuapp.com/sample-book
+- 官网：https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link
+- 免费试算：https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta
+- 条文查询：https://tiebanshenshuapp.com/tiaowen-chaxun/?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=verse_lookup
+- 样卷：https://tiebanshenshuapp.com/sample-book?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=sample
 
 > 本仓为研究资料仓。软件本体与其发行渠道以官网为准。

@@ -187,7 +187,7 @@ python -m unittest discover -s tests -v
 | 完整条文库 | 官方网站 |
 | 排盘、考刻定分 | 官方网站 |
 | 生成命书 | 官方网站 |
-| 免费试用 | https://tiebanshenshuapp.com/trial |
+| 免费试用 | https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta |
 
 官方网站：**https://tiebanshenshuapp.com**
 

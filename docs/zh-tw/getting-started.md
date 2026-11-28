@@ -139,7 +139,7 @@ python -m unittest discover -s tests -v
 | 完整條文庫 | 官方網站 |
 | 排盤、考刻定分 | 官方網站 |
 | 生成命書 | 官方網站 |
-| 免費試用 | https://tiebanshenshuapp.com/trial |
+| 免費試用 | https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta |
 
 官方網站：**https://tiebanshenshuapp.com**
 

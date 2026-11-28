@@ -21,7 +21,7 @@ This is the **officially maintained public research community**. It is **not** t
 | Algorithms | Basic public conversions only | Full private implementation |
 | Cost | Free | Per website policy |
 
-Official site: https://tiebanshenshuapp.com
+Official site: https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link
 
 ---
 
@@ -33,7 +33,7 @@ Two reasons: (1) we are a **textual research project**, not a reading service;
 (2) the full algorithm is not here — the tool performs only basic conversions.
 
 For the full service, use the free trial on the official website:
-https://tiebanshenshuapp.com/trial
+https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta
 
 ---
 

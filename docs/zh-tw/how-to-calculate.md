@@ -134,4 +134,4 @@ AI 可以幫你整理知識、解釋術語，但**不能替你完成考刻收斂
 
 ---
 
-> 官方入口：[官網](https://tiebanshenshuapp.com) ｜ [免費試算](https://tiebanshenshuapp.com/trial)
+> 官方入口：[官網](https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link) ｜ [免費試算](https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta)

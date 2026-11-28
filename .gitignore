@@ -42,3 +42,6 @@ CURRENT*
 
 # 本地渲染验证产物（不公开）
 _preview/
+
+# 构建产物（Release 附件另行上传）
+dist/

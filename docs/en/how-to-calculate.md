@@ -133,5 +133,5 @@ This site ships runnable local education tools that never upload your birth data
 
 ---
 
-> Official site: [tiebanshenshuapp.com](https://tiebanshenshuapp.com) ｜
-> [Free trial](https://tiebanshenshuapp.com/trial)
+> Official site: [tiebanshenshuapp.com](https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link) ｜
+> [Free trial](https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta)

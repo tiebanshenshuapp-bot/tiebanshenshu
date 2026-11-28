@@ -155,4 +155,4 @@ chore(ci): 固定 gitleaks 版本
 
 - 一般问题：开 [Issue](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/issues)
 - 安全问题：见 [SECURITY.md](SECURITY.md)（**不要公开披露**）
-- 商业合作：见官方网站 https://tiebanshenshuapp.com
+- 商业合作：见官方网站 https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link

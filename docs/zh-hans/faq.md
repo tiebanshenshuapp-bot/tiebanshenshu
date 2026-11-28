@@ -25,7 +25,7 @@ layout: default
 | 算法 | 仅公开基础换算 | 完整私有实现 |
 | 收费 | 完全免费 | 按官网政策 |
 
-官方网站：https://tiebanshenshuapp.com
+官方网站：https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link
 
 ---
 
@@ -39,7 +39,7 @@ layout: default
 2. **技术上**：完整算法不在这里，工具只做基础换算
 
 如果你想试用完整功能，唯一入口是官方网站的免费试算：
-https://tiebanshenshuapp.com/trial
+https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta
 
 ---
 

@@ -93,7 +93,7 @@
 ## 商业软件安全问题
 
 如果你发现的是**商业软件或官方网站**的问题，
-请通过 https://tiebanshenshuapp.com 的官方联系方式报告，
+请通过 https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link 的官方联系方式报告，
 不要提交到本公开仓库。
 
 ---

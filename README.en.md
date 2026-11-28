@@ -33,8 +33,8 @@
 | 🌍 | **[Public project survey](research/README.md)** | Licence analysis of 19 related GitHub projects (reproducible) |
 
 <p align="center">
-  <a href="https://tiebanshenshuapp.com"><strong>Official website</strong></a> ｜
-  <a href="https://tiebanshenshuapp.com/trial"><strong>Free trial</strong></a> ｜
+  <a href="https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link"><strong>Official website</strong></a> ｜
+  <a href="https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta"><strong>Free trial</strong></a> ｜
   <a href="CONTRIBUTING.md">Contributing</a> ｜
   <a href="docs/en/faq.md">FAQ</a>
 </p>
@@ -70,8 +70,8 @@ It is a historical divination text worth studying as literature, and a tradition
 
 | Purpose | URL | Status |
 |---|---|---|
-| Official website | https://tiebanshenshuapp.com | Verified reachable |
-| Free trial | https://tiebanshenshuapp.com/trial | Verified as a live trial page |
+| Official website | https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link | Verified reachable |
+| Free trial | https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta | Verified as a live trial page |
 
 > These are the **only official entry points**. This community does not distribute commercial software and does not claim lineage authority on behalf of any school.
 
@@ -171,7 +171,7 @@ A: No. We include only a **very small number** of attributed public excerpts (cu
 A: No. Our own new code is under **PolyForm Noncommercial 1.0.0** (source-available, noncommercial), and our documentation is under **CC BY-NC 4.0**. Note this is **Source Available**, not an OSI-approved open source licence.
 
 **Q: How does this relate to the official website?**
-A: https://tiebanshenshuapp.com is the sole official entry point for the full commercial service. This repository is an independent knowledge and research project — it is neither the commercial edition nor a second divination site.
+A: https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link is the sole official entry point for the full commercial service. This repository is an independent knowledge and research project — it is neither the commercial edition nor a second divination site.
 
 **Q: Is the tool accurate?**
 A: The tool performs only **publicly verifiable deterministic computation** (sexagenary conversion, index lookup, format checking). It does not implement the private derivation chain and produces no personal readings.
@@ -223,4 +223,4 @@ More in the [FAQ](docs/en/faq.md).
 
 ---
 
-[Official website](https://tiebanshenshuapp.com) ｜ [Free trial](https://tiebanshenshuapp.com/trial) ｜ [Discussions](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/discussions) ｜ [Contributing](CONTRIBUTING.md) ｜ [Security](SECURITY.md)
+[Official website](https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link) ｜ [Free trial](https://tiebanshenshuapp.com/trial?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=trial_cta) ｜ [Discussions](https://github.com/tiebanshenshuapp-bot/tiebanshenshu/discussions) ｜ [Contributing](CONTRIBUTING.md) ｜ [Security](SECURITY.md)

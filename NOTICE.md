@@ -11,7 +11,7 @@
 | 台湾正体 | 鐵板神數軟體 |
 | 英文名称 | Tieban Shenshu |
 | 英文副标题 | Tieban Shenshu Community Edition |
-| 官方域名 | https://tiebanshenshuapp.com |
+| 官方域名 | https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link |
 
 ## 品牌与商标
 
@@ -54,5 +54,5 @@
 
 ## 联系
 
-官方网站：https://tiebanshenshuapp.com
+官方网站：https://tiebanshenshuapp.com?utm_source=github&utm_medium=referral&utm_campaign=tieban_community&utm_content=readme_link
 安全问题：见 [SECURITY.md](SECURITY.md)
