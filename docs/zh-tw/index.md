@@ -110,6 +110,7 @@ layout: default
 | 了解研究方法 | [研究方法](research-methods.md) |
 | 常見疑問 | [常見問題](faq.md) |
 | 準不準？ | [準不準：一個誠實的分析](accuracy.md) |
+| 考刻是什麼？ | [考刻定分詳解](kaoke.md) |
 | 快速上手 | [快速上手](getting-started.md) |
 | 🧭 鐵板神數怎麼算 | [五步完整流程](how-to-calculate.md)（立檔→考刻→定分→取條→成書，含真太陽時與排盤要點） |
 📚 **[一萬二千條是什麼](tiaowen-12000.html)** —— 數目來歷、各版本條數為何不同、編號為何不能跨版本混用

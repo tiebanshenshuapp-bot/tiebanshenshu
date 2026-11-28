@@ -116,6 +116,8 @@ This is like:
 > pin down the true *ke*. But understand: **accuracy after calibration and accuracy before
 > calibration mean very different things.**
 
+> On why kaoke draws the most criticism, see [Kaoke and dingfen](kaoke.md).
+
 ### Reason 4: Selective memory and social transmission
 
 People tend to:

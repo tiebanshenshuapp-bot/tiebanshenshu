@@ -64,6 +64,8 @@ This is what distinguishes Tieban Shenshu from other systems.
 This is not guessing — it uses **verifiable facts** to infer the most likely finer time.
 If facts are insufficient, candidates cannot converge and one should not force a result.
 
+> Want the full treatment? See [Kaoke and dingfen](kaoke.md).
+
 ### Step 4 — Derive clause numbers
 
 - Four pillars, *ke*, *fen* and related parameters map to **clause numbers** by fixed rules

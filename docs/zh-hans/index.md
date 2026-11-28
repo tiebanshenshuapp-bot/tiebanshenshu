@@ -118,6 +118,7 @@ layout: default
 | 了解研究方法 | [research-methods.md](research-methods.md) |
 | 常见疑问 | [faq.md](faq.md) |
 | 准不准？ | [准不准：一个诚实的分析](accuracy.md) |
+| 考刻是什么？ | [考刻定分详解](kaoke.md) |
 | 🧭 铁板神数怎么算 | [五步完整流程](how-to-calculate.md)（立档→考刻→定分→取条→成书，含真太阳时与排盘要点） |
 📚 **[一万二千条是什么](tiaowen-12000.html)** —— 数目来历、各版本条数为何不同、编号为什么不能跨版本混用
 🔧 **[在线教学工具](../tools/index.html)** —— 干支换算、甲子查询、术语检索、繁简对照，浏览器本地运行，不上传数据
