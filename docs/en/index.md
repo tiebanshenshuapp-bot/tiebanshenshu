@@ -116,7 +116,7 @@ Every claim in this project carries one of these labels:
 | Understand our methodology | [Research methods](research-methods.md) |
 | Get quick answers | [FAQ](faq.md) |
 | Get started fast | [Getting started](getting-started.md) |
-| 🧭 | **[How it is calculated](how-to-calculate.md)** | Five steps: record → cast → calibrate → derive → compile |
+| 🧭 [How it is calculated](how-to-calculate.md) | Five steps: record → cast → calibrate → derive → compile |
 
 > 📌 **Translation status**: the overview and glossary are complete in this language.
 > Some advanced pages are still being prepared. We would rather label a page

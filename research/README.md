@@ -13,6 +13,7 @@
 | `public-repositories/` | 全球公开项目调查（见下） |
 | `glossary/` | 术语对照材料（见 [`docs/*/glossary.md`](../docs/)） |
 | `research-questions/` | 待研究的问题（拟建） |
+| [huangji-jingshi-opensource.md](huangji-jingshi-opensource.md) | 皇極經世与鐵版神數的**开源实现调研**（含 MIT 可商用候选） |
 
 ---
 
