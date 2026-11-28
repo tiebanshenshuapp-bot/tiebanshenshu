@@ -120,6 +120,8 @@ layout: default
 | 皇極經世係乜？ | [邵雍元會運世詳解](huangji-jingshi.md) |
 | 同八字/紫微有乜唔同？ | [三大體系對比](comparison.md) |
 | 命書點睇？ | [逐欄解析與閲讀方法](reading-a-report.md) |
+| 12000 條係乜？ | [條文數目與來歷](tiaowen-12000.md) |
+| 鐵板神數點計？ | [五步完整流程](how-to-calculate.md) |
 | 快速上手 | [快速上手](getting-started.md) |
 
 > 📌 **翻譯進度**：本語言版本的入門總覽與術語表已完成。
