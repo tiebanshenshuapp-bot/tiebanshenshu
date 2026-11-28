@@ -39,22 +39,22 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": {{ site.url | append: "/#organization" | jsonify }},
+      "@id": {{ site.url | append: site.baseurl | append: "/#organization" | jsonify }},
       "name": "铁板神数软件 · Tieban Shenshu",
       "url": "https://tiebanshenshuapp.com",
       "sameAs": [
         "https://github.com/tiebanshenshuapp-bot/tiebanshenshu",
-        {{ site.url | jsonify }}
+        {{ site.url | append: site.baseurl | jsonify }}
       ]
     },
     {
       "@type": "WebSite",
-      "@id": {{ site.url | append: "/#website" | jsonify }},
-      "url": {{ site.url | jsonify }},
+      "@id": {{ site.url | append: site.baseurl | append: "/#website" | jsonify }},
+      "url": {{ site.url | append: site.baseurl | jsonify }},
       "name": {{ site.title | jsonify }},
       "description": {{ site.description | jsonify }},
       "inLanguage": {{ page.lang | default: site.lang | default: "zh-Hans" | jsonify }},
-      "publisher": { "@id": {{ site.url | append: "/#organization" | jsonify }} }
+      "publisher": { "@id": {{ site.url | append: site.baseurl | append: "/#organization" | jsonify }} }
     },
     {
       "@type": "Article",
@@ -62,8 +62,8 @@
       "headline": {{ page.title | default: site.title | jsonify }},
       "description": {{ page.description | default: site.description | jsonify }},
       "inLanguage": {{ page.lang | default: site.lang | default: "zh-Hans" | jsonify }},
-      "isPartOf": { "@id": {{ site.url | append: "/#website" | jsonify }} },
-      "publisher": { "@id": {{ site.url | append: "/#organization" | jsonify }} },
+      "isPartOf": { "@id": {{ site.url | append: site.baseurl | append: "/#website" | jsonify }} },
+      "publisher": { "@id": {{ site.url | append: site.baseurl | append: "/#organization" | jsonify }} },
       "mainEntityOfPage": { "@id": {{ page.url | absolute_url | jsonify }} },
       "datePublished": "2026-11-27",
       "dateModified": {{ site.time | date_to_xmlschema | jsonify }}
@@ -75,7 +75,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "知识库首页",
-          "item": {{ site.url | append: "/" | jsonify }}
+          "item": {{ site.url | append: site.baseurl | append: "/" | jsonify }}
         }{%- assign rest_check = page.url | remove_first: "/zh-hans" | remove_first: "/zh-hk" | remove_first: "/zh-tw" | remove_first: "/en" -%}
         {%- if rest_check != page.url -%},
         {
